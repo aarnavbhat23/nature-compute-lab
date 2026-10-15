@@ -1,0 +1,530 @@
+{
+  "experiment": "03_symbiosis",
+  "started_utc": "2026-10-15T16:02:23.226605+00:00",
+  "finished_utc": "2026-10-15T16:02:23.265962+00:00",
+  "source_commit": "bcdca8544b29d21d5247b68b192bc0ccd6d481d9",
+  "source_tree_dirty": false,
+  "python": "3.13.5",
+  "numpy": "2.4.4",
+  "platform": "macOS-26.5.1-arm64-arm-64bit-Mach-O",
+  "rows": [
+    {
+      "seed": 7,
+      "elapsed_seconds": 0.01601374987512827,
+      "metrics": {
+        "partnership_mse": 0.0004520149328154011,
+        "independent_modules_mse": 0.06993543564549354,
+        "fixed_interactions_mse": 0.0007618196338954814,
+        "retained_joins": 2,
+        "fixed_dictionary_terms": 15
+      },
+      "details": {
+        "operations": [
+          [
+            1,
+            2
+          ],
+          [
+            3,
+            3
+          ]
+        ],
+        "coefficients": [
+          0.0030718139430927056,
+          0.9944242522282107,
+          0.993455918267251,
+          0.671998943837817,
+          0.2695863815290861
+        ],
+        "selection_trace": [
+          {
+            "joins": [],
+            "validation_mse": 0.005721988577582676
+          },
+          {
+            "joins": [
+              [
+                1,
+                2
+              ]
+            ],
+            "validation_mse": 4.937225379217135e-05
+          },
+          {
+            "joins": [
+              [
+                1,
+                2
+              ],
+              [
+                3,
+                3
+              ]
+            ],
+            "validation_mse": 2.288639968287612e-05
+          },
+          {
+            "joins": [
+              [
+                1,
+                2
+              ],
+              [
+                3,
+                3
+              ],
+              [
+                2,
+                2
+              ]
+            ],
+            "validation_mse": 2.293467128885947e-05
+          },
+          {
+            "joins": [
+              [
+                1,
+                2
+              ],
+              [
+                3,
+                3
+              ],
+              [
+                2,
+                2
+              ],
+              [
+                5,
+                5
+              ]
+            ],
+            "validation_mse": 4.0303560024305314e-05
+          }
+        ],
+        "intermediate_training_labels_available_to_all_controls": true,
+        "train_constraint": "abs(x1*x2) < 0.35",
+        "test_constraint": "abs(x1),abs(x2) > 0.65"
+      }
+    },
+    {
+      "seed": 17,
+      "elapsed_seconds": 0.0009897081181406975,
+      "metrics": {
+        "partnership_mse": 9.64014125900441e-05,
+        "independent_modules_mse": 0.06904469981988555,
+        "fixed_interactions_mse": 0.0008376370046349735,
+        "retained_joins": 2,
+        "fixed_dictionary_terms": 15
+      },
+      "details": {
+        "operations": [
+          [
+            1,
+            2
+          ],
+          [
+            3,
+            3
+          ]
+        ],
+        "coefficients": [
+          0.001169286427510106,
+          0.9999923651534157,
+          0.9933250666910394,
+          0.6942352508797845,
+          0.4994828890749489
+        ],
+        "selection_trace": [
+          {
+            "joins": [],
+            "validation_mse": 0.0054838850247386235
+          },
+          {
+            "joins": [
+              [
+                1,
+                2
+              ]
+            ],
+            "validation_mse": 4.176653478132426e-05
+          },
+          {
+            "joins": [
+              [
+                1,
+                2
+              ],
+              [
+                3,
+                3
+              ]
+            ],
+            "validation_mse": 6.5487402737788014e-06
+          },
+          {
+            "joins": [
+              [
+                1,
+                2
+              ],
+              [
+                3,
+                3
+              ],
+              [
+                1,
+                1
+              ]
+            ],
+            "validation_mse": 6.650582403333593e-06
+          },
+          {
+            "joins": [
+              [
+                1,
+                2
+              ],
+              [
+                3,
+                3
+              ],
+              [
+                1,
+                1
+              ],
+              [
+                5,
+                5
+              ]
+            ],
+            "validation_mse": 9.004624365429103e-06
+          }
+        ],
+        "intermediate_training_labels_available_to_all_controls": true,
+        "train_constraint": "abs(x1*x2) < 0.35",
+        "test_constraint": "abs(x1),abs(x2) > 0.65"
+      }
+    },
+    {
+      "seed": 29,
+      "elapsed_seconds": 0.0009294170886278152,
+      "metrics": {
+        "partnership_mse": 0.0003100761922250864,
+        "independent_modules_mse": 0.06627607542398531,
+        "fixed_interactions_mse": 0.000754213688041703,
+        "retained_joins": 2,
+        "fixed_dictionary_terms": 15
+      },
+      "details": {
+        "operations": [
+          [
+            1,
+            2
+          ],
+          [
+            3,
+            3
+          ]
+        ],
+        "coefficients": [
+          0.0014722749183692365,
+          1.0018220844592598,
+          0.9958689876531679,
+          0.6990461347758783,
+          0.5301323382561284
+        ],
+        "selection_trace": [
+          {
+            "joins": [],
+            "validation_mse": 0.004361103564842887
+          },
+          {
+            "joins": [
+              [
+                1,
+                2
+              ]
+            ],
+            "validation_mse": 2.5226226548425102e-05
+          },
+          {
+            "joins": [
+              [
+                1,
+                2
+              ],
+              [
+                3,
+                3
+              ]
+            ],
+            "validation_mse": 5.832916674273286e-06
+          },
+          {
+            "joins": [
+              [
+                1,
+                2
+              ],
+              [
+                3,
+                3
+              ],
+              [
+                2,
+                2
+              ]
+            ],
+            "validation_mse": 8.564606743684776e-06
+          },
+          {
+            "joins": [
+              [
+                1,
+                2
+              ],
+              [
+                3,
+                3
+              ],
+              [
+                2,
+                2
+              ],
+              [
+                1,
+                3
+              ]
+            ],
+            "validation_mse": 1.0732543144393651e-05
+          }
+        ],
+        "intermediate_training_labels_available_to_all_controls": true,
+        "train_constraint": "abs(x1*x2) < 0.35",
+        "test_constraint": "abs(x1),abs(x2) > 0.65"
+      }
+    },
+    {
+      "seed": 43,
+      "elapsed_seconds": 0.0009074169211089611,
+      "metrics": {
+        "partnership_mse": 4.7530000737698525e-05,
+        "independent_modules_mse": 0.06931465480750638,
+        "fixed_interactions_mse": 0.0005682817268051775,
+        "retained_joins": 2,
+        "fixed_dictionary_terms": 15
+      },
+      "details": {
+        "operations": [
+          [
+            1,
+            2
+          ],
+          [
+            3,
+            3
+          ]
+        ],
+        "coefficients": [
+          -0.0017646688231606944,
+          0.9993540431889331,
+          1.0004114352130904,
+          0.712878740518632,
+          0.37133645137333693
+        ],
+        "selection_trace": [
+          {
+            "joins": [],
+            "validation_mse": 0.005113015964637411
+          },
+          {
+            "joins": [
+              [
+                1,
+                2
+              ]
+            ],
+            "validation_mse": 2.5739834269239655e-05
+          },
+          {
+            "joins": [
+              [
+                1,
+                2
+              ],
+              [
+                3,
+                3
+              ]
+            ],
+            "validation_mse": 7.81312772118347e-06
+          },
+          {
+            "joins": [
+              [
+                1,
+                2
+              ],
+              [
+                3,
+                3
+              ],
+              [
+                2,
+                3
+              ]
+            ],
+            "validation_mse": 1.1326784486017894e-05
+          },
+          {
+            "joins": [
+              [
+                1,
+                2
+              ],
+              [
+                3,
+                3
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                2,
+                5
+              ]
+            ],
+            "validation_mse": 1.4678805506257685e-05
+          }
+        ],
+        "intermediate_training_labels_available_to_all_controls": true,
+        "train_constraint": "abs(x1*x2) < 0.35",
+        "test_constraint": "abs(x1),abs(x2) > 0.65"
+      }
+    },
+    {
+      "seed": 71,
+      "elapsed_seconds": 0.0008582090958952904,
+      "metrics": {
+        "partnership_mse": 5.3809957326268625e-05,
+        "independent_modules_mse": 0.06352240109628347,
+        "fixed_interactions_mse": 0.0004595478375926288,
+        "retained_joins": 2,
+        "fixed_dictionary_terms": 15
+      },
+      "details": {
+        "operations": [
+          [
+            1,
+            2
+          ],
+          [
+            3,
+            3
+          ]
+        ],
+        "coefficients": [
+          -0.0021305786825767115,
+          1.0008286950302878,
+          0.9988502803998959,
+          0.7137074953712724,
+          0.4771056175591716
+        ],
+        "selection_trace": [
+          {
+            "joins": [],
+            "validation_mse": 0.004374864148658844
+          },
+          {
+            "joins": [
+              [
+                1,
+                2
+              ]
+            ],
+            "validation_mse": 3.8349221795018964e-05
+          },
+          {
+            "joins": [
+              [
+                1,
+                2
+              ],
+              [
+                3,
+                3
+              ]
+            ],
+            "validation_mse": 9.017146117793937e-06
+          },
+          {
+            "joins": [
+              [
+                1,
+                2
+              ],
+              [
+                3,
+                3
+              ],
+              [
+                2,
+                3
+              ]
+            ],
+            "validation_mse": 1.4329295342764941e-05
+          },
+          {
+            "joins": [
+              [
+                1,
+                2
+              ],
+              [
+                3,
+                3
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                1,
+                1
+              ]
+            ],
+            "validation_mse": 1.405553335750088e-05
+          }
+        ],
+        "intermediate_training_labels_available_to_all_controls": true,
+        "train_constraint": "abs(x1*x2) < 0.35",
+        "test_constraint": "abs(x1),abs(x2) > 0.65"
+      }
+    }
+  ],
+  "summary": {
+    "partnership_mse": {
+      "mean": 0.00019196649913889974,
+      "std": 0.00018073247172383736
+    },
+    "independent_modules_mse": {
+      "mean": 0.06761865335863085,
+      "std": 0.0026860429862694286
+    },
+    "fixed_interactions_mse": {
+      "mean": 0.0006762999781939929,
+      "std": 0.00015657524300054815
+    },
+    "retained_joins": {
+      "mean": 2.0,
+      "std": 0.0
+    },
+    "fixed_dictionary_terms": {
+      "mean": 15.0,
+      "std": 0.0
+    }
+  },
+  "scope": "Synthetic proof of mechanism; no biological or ASI validation."
+}
