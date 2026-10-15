@@ -1,0 +1,321 @@
+{
+  "experiment": "04_repair",
+  "started_utc": "2026-10-15T16:03:24.072208+00:00",
+  "finished_utc": "2026-10-15T16:03:24.106482+00:00",
+  "source_commit": "26b4f0152cbf799e95a713e9b5ebaf89a5620759",
+  "source_tree_dirty": false,
+  "python": "3.13.5",
+  "numpy": "2.4.4",
+  "platform": "macOS-26.5.1-arm64-arm-64bit-Mach-O",
+  "rows": [
+    {
+      "seed": 7,
+      "elapsed_seconds": 0.012652333825826645,
+      "metrics": {
+        "sparse_repair_mse": 0.0004418456960875334,
+        "frozen_mse": 0.06535124789637228,
+        "full_refit_mse": 0.011758637294973418,
+        "regularized_full_patch_mse": 0.005736903899595815,
+        "patch_terms": 2,
+        "changed_interaction_selected": 1.0
+      },
+      "details": {
+        "patch": {
+          "constant": -0.0030196909125053406,
+          "a*b": 0.6694806512444733
+        },
+        "trace": [
+          {
+            "terms": [
+              0
+            ],
+            "validation_mse": 0.09154942609300494
+          },
+          {
+            "terms": [
+              0,
+              4
+            ],
+            "validation_mse": 0.005744725169672167
+          },
+          {
+            "terms": [
+              0,
+              4,
+              3
+            ],
+            "validation_mse": 0.008359635341050593
+          },
+          {
+            "terms": [
+              0,
+              4,
+              3,
+              2
+            ],
+            "validation_mse": 0.013444400752550411
+          }
+        ],
+        "adaptation_fit_labels": 12,
+        "adaptation_validation_labels": 12,
+        "full_refit_penalty": 0.001,
+        "full_patch_penalty": 0.1,
+        "changed_term": "a*b",
+        "all_adapting_controls_receive_same_examples": true
+      }
+    },
+    {
+      "seed": 17,
+      "elapsed_seconds": 0.0004742089658975601,
+      "metrics": {
+        "sparse_repair_mse": 0.0007614456044077048,
+        "frozen_mse": 0.04947880564381882,
+        "full_refit_mse": 0.0011917922003113416,
+        "regularized_full_patch_mse": 0.005112413387962528,
+        "patch_terms": 3,
+        "changed_interaction_selected": 1.0
+      },
+      "details": {
+        "patch": {
+          "constant": -0.019489042380861465,
+          "a*b": 0.6414483047016892,
+          "b*c": -0.024185407268776576
+        },
+        "trace": [
+          {
+            "terms": [
+              0
+            ],
+            "validation_mse": 0.017757703591602537
+          },
+          {
+            "terms": [
+              0,
+              4
+            ],
+            "validation_mse": 0.002788271186430283
+          },
+          {
+            "terms": [
+              0,
+              4,
+              5
+            ],
+            "validation_mse": 0.0027000359676689644
+          },
+          {
+            "terms": [
+              0,
+              4,
+              5,
+              2
+            ],
+            "validation_mse": 0.0035322401634646414
+          }
+        ],
+        "adaptation_fit_labels": 12,
+        "adaptation_validation_labels": 12,
+        "full_refit_penalty": 0.1,
+        "full_patch_penalty": 1.0,
+        "changed_term": "a*b",
+        "all_adapting_controls_receive_same_examples": true
+      }
+    },
+    {
+      "seed": 29,
+      "elapsed_seconds": 0.000463792122900486,
+      "metrics": {
+        "sparse_repair_mse": 0.00025521377443732147,
+        "frozen_mse": 0.06934439355254397,
+        "full_refit_mse": 0.0150484076701637,
+        "regularized_full_patch_mse": 0.004397987929054837,
+        "patch_terms": 3,
+        "changed_interaction_selected": 1.0
+      },
+      "details": {
+        "patch": {
+          "constant": -0.011078120823455412,
+          "b": 0.010997245562668845,
+          "a*b": 0.7727084617766112
+        },
+        "trace": [
+          {
+            "terms": [
+              0
+            ],
+            "validation_mse": 0.08589739810142032
+          },
+          {
+            "terms": [
+              0,
+              2
+            ],
+            "validation_mse": 0.12019716467692522
+          },
+          {
+            "terms": [
+              0,
+              2,
+              4
+            ],
+            "validation_mse": 0.0028208481187116017
+          },
+          {
+            "terms": [
+              0,
+              2,
+              4,
+              3
+            ],
+            "validation_mse": 0.00321014785917706
+          }
+        ],
+        "adaptation_fit_labels": 12,
+        "adaptation_validation_labels": 12,
+        "full_refit_penalty": 0.1,
+        "full_patch_penalty": 0.1,
+        "changed_term": "a*b",
+        "all_adapting_controls_receive_same_examples": true
+      }
+    },
+    {
+      "seed": 43,
+      "elapsed_seconds": 0.0006483751349151134,
+      "metrics": {
+        "sparse_repair_mse": 3.109270370957776e-05,
+        "frozen_mse": 0.07043122980993397,
+        "full_refit_mse": 0.003987491029565129,
+        "regularized_full_patch_mse": 0.004525934022103191,
+        "patch_terms": 2,
+        "changed_interaction_selected": 1.0
+      },
+      "details": {
+        "patch": {
+          "constant": -0.005013458301400681,
+          "a*b": 0.794955904673226
+        },
+        "trace": [
+          {
+            "terms": [
+              0
+            ],
+            "validation_mse": 0.049863863835728904
+          },
+          {
+            "terms": [
+              0,
+              4
+            ],
+            "validation_mse": 0.0019975041685765713
+          },
+          {
+            "terms": [
+              0,
+              4,
+              6
+            ],
+            "validation_mse": 0.002493345619606803
+          },
+          {
+            "terms": [
+              0,
+              4,
+              6,
+              5
+            ],
+            "validation_mse": 0.0033804830902192224
+          }
+        ],
+        "adaptation_fit_labels": 12,
+        "adaptation_validation_labels": 12,
+        "full_refit_penalty": 0.1,
+        "full_patch_penalty": 0.1,
+        "changed_term": "a*b",
+        "all_adapting_controls_receive_same_examples": true
+      }
+    },
+    {
+      "seed": 71,
+      "elapsed_seconds": 0.0006093750707805157,
+      "metrics": {
+        "sparse_repair_mse": 3.3625754572654906e-05,
+        "frozen_mse": 0.07768863492430177,
+        "full_refit_mse": 0.00998254615169158,
+        "regularized_full_patch_mse": 0.011408216456909948,
+        "patch_terms": 2,
+        "changed_interaction_selected": 1.0
+      },
+      "details": {
+        "patch": {
+          "constant": 0.001376338466385546,
+          "a*b": 0.8495950431019861
+        },
+        "trace": [
+          {
+            "terms": [
+              0
+            ],
+            "validation_mse": 0.14662954721190666
+          },
+          {
+            "terms": [
+              0,
+              4
+            ],
+            "validation_mse": 0.003280248319099252
+          },
+          {
+            "terms": [
+              0,
+              4,
+              3
+            ],
+            "validation_mse": 0.00494439551550966
+          },
+          {
+            "terms": [
+              0,
+              4,
+              3,
+              7
+            ],
+            "validation_mse": 0.008417684416710087
+          }
+        ],
+        "adaptation_fit_labels": 12,
+        "adaptation_validation_labels": 12,
+        "full_refit_penalty": 0.001,
+        "full_patch_penalty": 0.001,
+        "changed_term": "a*b",
+        "all_adapting_controls_receive_same_examples": true
+      }
+    }
+  ],
+  "summary": {
+    "sparse_repair_mse": {
+      "mean": 0.0003046447066429584,
+      "std": 0.0003074965688638317
+    },
+    "frozen_mse": {
+      "mean": 0.06645886236539415,
+      "std": 0.010485262528319819
+    },
+    "full_refit_mse": {
+      "mean": 0.008393774869341033,
+      "std": 0.005688025199630222
+    },
+    "regularized_full_patch_mse": {
+      "mean": 0.006236291139125263,
+      "std": 0.0029396420048710416
+    },
+    "patch_terms": {
+      "mean": 2.4,
+      "std": 0.5477225575051661
+    },
+    "changed_interaction_selected": {
+      "mean": 1.0,
+      "std": 0.0
+    }
+  },
+  "scope": "Synthetic proof of mechanism; no biological or ASI validation."
+}
