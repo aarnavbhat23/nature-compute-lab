@@ -1,0 +1,420 @@
+{
+  "experiment": "01_development",
+  "started_utc": "2026-10-15T16:00:08.188216+00:00",
+  "finished_utc": "2026-10-15T16:00:08.220384+00:00",
+  "source_commit": "c7c54b0eb58ff9879faace3b09169af6f193b9c4",
+  "source_tree_dirty": false,
+  "python": "3.13.5",
+  "numpy": "2.4.4",
+  "platform": "macOS-26.5.1-arm64-arm-64bit-Mach-O",
+  "rows": [
+    {
+      "seed": 7,
+      "elapsed_seconds": 0.011629917193204165,
+      "metrics": {
+        "grown_program_mse": 5.4353612133576215e-05,
+        "shared_linear_mse": 0.04642319067261205,
+        "fixed_full_dictionary_mse": 9.369429971461658e-05,
+        "active_terms": 4,
+        "available_terms": 6
+      },
+      "details": {
+        "selected_program": {
+          "constant": 0.015343928314359422,
+          "tanh(0.7x)": 0.5749267130436635,
+          "cube": 0.019074297533361262,
+          "tanh(1.4x)": 0.4965304986073533
+        },
+        "growth_trace": [
+          {
+            "terms": [
+              0
+            ],
+            "validation_mse": 0.2843012396314804
+          },
+          {
+            "terms": [
+              0,
+              5
+            ],
+            "validation_mse": 0.0004421349682908009
+          },
+          {
+            "terms": [
+              0,
+              5,
+              3
+            ],
+            "validation_mse": 5.9880333503873866e-05
+          },
+          {
+            "terms": [
+              0,
+              5,
+              3,
+              4
+            ],
+            "validation_mse": 2.1118667099330757e-06
+          },
+          {
+            "terms": [
+              0,
+              5,
+              3,
+              4,
+              2
+            ],
+            "validation_mse": 2.8895269545611087e-06
+          },
+          {
+            "terms": [
+              0,
+              5,
+              3,
+              4,
+              2,
+              1
+            ],
+            "validation_mse": 4.244758915572605e-06
+          }
+        ],
+        "train_stages": 3,
+        "test_stages": 12,
+        "test_chains": 64,
+        "test_contains_training_chains": false
+      }
+    },
+    {
+      "seed": 17,
+      "elapsed_seconds": 0.0005182498134672642,
+      "metrics": {
+        "grown_program_mse": 1.02041719711723e-05,
+        "shared_linear_mse": 0.010004870530119659,
+        "fixed_full_dictionary_mse": 1.1899301055698421e-05,
+        "active_terms": 4,
+        "available_terms": 6
+      },
+      "details": {
+        "selected_program": {
+          "constant": 0.003923673738167131,
+          "tanh(0.7x)": 0.5731909798615429,
+          "cube": 0.030177167389560486,
+          "tanh(1.4x)": 0.3762466854913436
+        },
+        "growth_trace": [
+          {
+            "terms": [
+              0
+            ],
+            "validation_mse": 0.11853686700242715
+          },
+          {
+            "terms": [
+              0,
+              5
+            ],
+            "validation_mse": 0.0002192995304895908
+          },
+          {
+            "terms": [
+              0,
+              5,
+              3
+            ],
+            "validation_mse": 3.239628084243658e-05
+          },
+          {
+            "terms": [
+              0,
+              5,
+              3,
+              4
+            ],
+            "validation_mse": 4.838676657653179e-07
+          },
+          {
+            "terms": [
+              0,
+              5,
+              3,
+              4,
+              2
+            ],
+            "validation_mse": 5.200059009549061e-07
+          },
+          {
+            "terms": [
+              0,
+              5,
+              3,
+              4,
+              2,
+              1
+            ],
+            "validation_mse": 7.381128134370388e-07
+          }
+        ],
+        "train_stages": 3,
+        "test_stages": 12,
+        "test_chains": 64,
+        "test_contains_training_chains": false
+      }
+    },
+    {
+      "seed": 29,
+      "elapsed_seconds": 0.0005086250603199005,
+      "metrics": {
+        "grown_program_mse": 1.3583200640824039e-05,
+        "shared_linear_mse": 0.008430378851889258,
+        "fixed_full_dictionary_mse": 1.4589834386920315e-05,
+        "active_terms": 5,
+        "available_terms": 6
+      },
+      "details": {
+        "selected_program": {
+          "constant": 0.00020484294072353228,
+          "tanh(1.4x)": 0.4487902689603279,
+          "cube": -0.024420198478702523,
+          "square": 0.004147499850813797,
+          "identity": 0.2776489449043006
+        },
+        "growth_trace": [
+          {
+            "terms": [
+              0
+            ],
+            "validation_mse": 0.16447369580247534
+          },
+          {
+            "terms": [
+              0,
+              4
+            ],
+            "validation_mse": 0.0003065580621966993
+          },
+          {
+            "terms": [
+              0,
+              4,
+              3
+            ],
+            "validation_mse": 8.23092618882976e-06
+          },
+          {
+            "terms": [
+              0,
+              4,
+              3,
+              2
+            ],
+            "validation_mse": 9.680246309240215e-06
+          },
+          {
+            "terms": [
+              0,
+              4,
+              3,
+              2,
+              1
+            ],
+            "validation_mse": 2.4629499203034474e-06
+          },
+          {
+            "terms": [
+              0,
+              4,
+              3,
+              2,
+              1,
+              5
+            ],
+            "validation_mse": 3.4547133335041935e-06
+          }
+        ],
+        "train_stages": 3,
+        "test_stages": 12,
+        "test_chains": 64,
+        "test_contains_training_chains": false
+      }
+    },
+    {
+      "seed": 43,
+      "elapsed_seconds": 0.0005273330025374889,
+      "metrics": {
+        "grown_program_mse": 9.385649755344897e-05,
+        "shared_linear_mse": 0.004549450620877491,
+        "fixed_full_dictionary_mse": 9.139382882396222e-05,
+        "active_terms": 6,
+        "available_terms": 6
+      },
+      "details": {
+        "selected_program": {
+          "constant": -0.03141157995771096,
+          "tanh(0.7x)": -0.3813988223482294,
+          "cube": -0.012449184576041042,
+          "square": 0.005152015054855632,
+          "tanh(1.4x)": 0.46292354057375673,
+          "identity": 0.4936572937211697
+        },
+        "growth_trace": [
+          {
+            "terms": [
+              0
+            ],
+            "validation_mse": 0.10986912860070344
+          },
+          {
+            "terms": [
+              0,
+              5
+            ],
+            "validation_mse": 0.00017652971484128618
+          },
+          {
+            "terms": [
+              0,
+              5,
+              3
+            ],
+            "validation_mse": 2.6477598047214924e-05
+          },
+          {
+            "terms": [
+              0,
+              5,
+              3,
+              2
+            ],
+            "validation_mse": 2.1923319879489447e-05
+          },
+          {
+            "terms": [
+              0,
+              5,
+              3,
+              2,
+              4
+            ],
+            "validation_mse": 5.736488532906251e-06
+          },
+          {
+            "terms": [
+              0,
+              5,
+              3,
+              2,
+              4,
+              1
+            ],
+            "validation_mse": 5.69846993590577e-06
+          }
+        ],
+        "train_stages": 3,
+        "test_stages": 12,
+        "test_chains": 64,
+        "test_contains_training_chains": false
+      }
+    },
+    {
+      "seed": 71,
+      "elapsed_seconds": 0.0004877080209553242,
+      "metrics": {
+        "grown_program_mse": 1.276243218378902e-05,
+        "shared_linear_mse": 0.010723853252850926,
+        "fixed_full_dictionary_mse": 1.087249346075061e-05,
+        "active_terms": 6,
+        "available_terms": 6
+      },
+      "details": {
+        "selected_program": {
+          "constant": 0.015534580055168718,
+          "tanh(1.4x)": 0.6031604273515355,
+          "cube": -0.1676476418006702,
+          "square": -0.0049085982508637,
+          "identity": 1.6979602070479027,
+          "tanh(0.7x)": -2.2808386369778613
+        },
+        "growth_trace": [
+          {
+            "terms": [
+              0
+            ],
+            "validation_mse": 0.18184236342664245
+          },
+          {
+            "terms": [
+              0,
+              4
+            ],
+            "validation_mse": 0.00031789786068658806
+          },
+          {
+            "terms": [
+              0,
+              4,
+              3
+            ],
+            "validation_mse": 8.373249582008671e-06
+          },
+          {
+            "terms": [
+              0,
+              4,
+              3,
+              2
+            ],
+            "validation_mse": 1.2147214483788939e-05
+          },
+          {
+            "terms": [
+              0,
+              4,
+              3,
+              2,
+              1
+            ],
+            "validation_mse": 4.909142311916931e-06
+          },
+          {
+            "terms": [
+              0,
+              4,
+              3,
+              2,
+              1,
+              5
+            ],
+            "validation_mse": 4.81647067108229e-06
+          }
+        ],
+        "train_stages": 3,
+        "test_stages": 12,
+        "test_chains": 64,
+        "test_contains_training_chains": false
+      }
+    }
+  ],
+  "summary": {
+    "grown_program_mse": {
+      "mean": 3.6951982896562107e-05,
+      "std": 3.6700205127290084e-05
+    },
+    "shared_linear_mse": {
+      "mean": 0.016026348785669876,
+      "std": 0.017159258482502278
+    },
+    "fixed_full_dictionary_mse": {
+      "mean": 4.4489951488389624e-05,
+      "std": 4.389573605723502e-05
+    },
+    "active_terms": {
+      "mean": 5.0,
+      "std": 1.0
+    },
+    "available_terms": {
+      "mean": 6.0,
+      "std": 0.0
+    }
+  },
+  "scope": "Synthetic proof of mechanism; no biological or ASI validation."
+}
