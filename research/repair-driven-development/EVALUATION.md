@@ -1,6 +1,6 @@
 # Evaluation plan before implementation
 
-**Status:** prospective local protocol, October 15, 2026; not an external preregistration. No DRS results have been inspected because the model is not implemented. Amendments must be dated and distinguish pilot changes from confirmatory decisions.
+**Status:** prospective local protocol, October 15, 2026; not an external preregistration. This was written before DRS implementation. A fixed-substrate development pilot is now implemented under [FIRST_TASK.md](FIRST_TASK.md); none of the structural-repair or confirmatory claims below have been tested. Amendments must be dated and distinguish pilot changes from confirmatory decisions.
 
 ## Hypotheses
 

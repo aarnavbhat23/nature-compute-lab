@@ -1,6 +1,6 @@
 # Developmental Repair Substrate: version-zero specification
 
-**Proposed design; not implemented or novelty-validated.** The rules below are intended to make the first implementation reproducible and falsifiable.
+**Proposed design; fixed-substrate dynamics and parameter learning now have a first implementation. Structural edits and selector learning are not implemented; architectural novelty is unverified.** See [FIRST_TASK.md](FIRST_TASK.md) for the exact implemented subset. The rules below specify the broader target.
 
 ## 1. Inputs, state, and outputs
 

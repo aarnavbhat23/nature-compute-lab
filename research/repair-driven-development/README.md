@@ -1,6 +1,8 @@
 # Repair-driven development
 
-**Status: architecture proposal, October 15, 2026. No model has been trained under this specification.**
+**Status: architecture proposal with a fixed-substrate pilot implemented October 15, 2026. Structural repair and selector learning remain unimplemented.**
+
+Start with [the first-task implementation and pilot protocol](FIRST_TASK.md). Results are linked there after execution.
 
 Keep this work in Nature Compute Lab. The seven initial experiments are mechanism probes; this is a proposal for a single model to build after those checkpoints. It does not replace or publish the pending experiments.
 
@@ -70,7 +72,7 @@ The equations use familiar tools from dynamical systems, optimization, and model
 4. **Confirmatory comparison:** freeze code and tuning, then run [EVALUATION.md](EVALUATION.md). Keep dense-change and misspecified-family failures in the results.
 5. **Biological transfer:** choose one suitably licensed experimental perturbation dataset, define a biologically defensible split, and test whether any synthetic benefit survives. Observational prediction alone will not establish causality.
 
-Each step is its own checkpoint. Do not schedule or publish new experimental results until a new cadence is explicitly agreed; the existing three scheduled checkpoints remain unchanged. The proposal itself can be reviewed on its own branch now.
+Each step is its own checkpoint. The user requested the first fixed-substrate implementation and test on October 15; its source and results will be added to the existing draft PR. No new recurring publication schedule is created. The existing three scheduled checkpoints remain unchanged.
 
 ## Success and stopping
 
