@@ -84,6 +84,16 @@ The design goal is to turn a biological rule into an explicit invariant, state v
 
 **Test:** evaluate no-change, noise-only, sparse-change, and dense-change episodes separately. Count false repairs and retained-task deterioration.
 
+## 9. Biological variability has distinct sources
+
+**Source:** Elowitz, Levine, Siggia and Swain, *Stochastic gene expression in a single cell*, Science (2002), [primary paper](https://pubmed.ncbi.nlm.nih.gov/12183631/), [DOI](https://doi.org/10.1126/science.1070919). Abstract/bibliographic record inspected.
+
+**Biological finding:** the study separates intrinsic gene-expression variation from variation associated with extrinsic cellular factors. Unpredictable observations need not imply arbitrary internal chaos.
+
+**Engineering inference:** keep a distinction between latent dynamics, unmeasured context, measurement noise, and uncertainty about the model. A deterministic forecasting core is a valid first experiment; it does not justify pretending that noisy biological outcomes are exactly predictable. Adding randomness does not create missing information.
+
+**Test:** introduce known observation-noise and hidden-context changes separately, then assess proper predictive scores and interval calibration when a probabilistic observation layer is implemented. The present pilot is noiseless and predicts conditional means only; it does not test this requirement.
+
 ## Design synthesis and priorities
 
 | Rule | Computational consequence | Current status |
