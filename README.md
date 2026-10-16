@@ -36,4 +36,4 @@ The runner writes seed-level measurements, an aggregate, timings, the source rev
 
 See [PROTOCOL.md](PROTOCOL.md) for the initial evaluation plan. Code and results will be committed as separate experiments are completed, with actual commit times. Negative results stay in the record. No biological sequences, private data, or live experiments are used in this first pass.
 
-Developed with Codex assistance. The implementation and documentation are intended to make every reported number reproducible and every limitation visible.
+The implementation and documentation are intended to make every reported number reproducible and every limitation visible.
