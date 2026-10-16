@@ -1,0 +1,17 @@
+{
+  "status": "fixed coupled typed-model development pilot, not structural repair",
+  "mechanisms": ["none", "direct", "resource", "mixed"],
+  "seeds": [1301, 1409, 1511],
+  "heads": ["saturating", "neural"],
+  "learning_rates": [0.003, 0.01, 0.03],
+  "optimizer_steps": 600,
+  "batch_size": 8,
+  "train_trajectories": 32,
+  "train_intervals": 8,
+  "validation_trajectories": 8,
+  "validation_intervals": 32,
+  "heldout_trajectories": 16,
+  "heldout_intervals": 32,
+  "variance_floor": 0.0001,
+  "long_rollout_intervals": 128
+}

@@ -2,6 +2,8 @@
 
 **Date:** October 15, 2026. **Authorization:** the user explicitly requested both biology-led research and a focused closest-method comparison during this round. Earlier brainstorming deliberately omitted this comparison. This is a scoped literature audit, not an exhaustive priority, patent, or freedom-to-operate search.
 
+**Follow-up:** [CLOSED_LOOP_PRECEDENTS.md](CLOSED_LOOP_PRECEDENTS.md) identifies five additional primary precedents for biological hypothesis generation, model revision, experiment selection, and revision records. The broad self-revising scientific loop already exists; our exact learned typed repair procedure remains a research hypothesis.
+
 ## Finding
 
 The current components do **not** establish a previously unknown category of AI. Learned reaction dynamics, fractional-occupancy regulation, regeneration, capacity expansion, constraint-preserving computation, and adaptation to changed systems all have substantial precedents.
