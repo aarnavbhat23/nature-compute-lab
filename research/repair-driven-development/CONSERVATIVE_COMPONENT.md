@@ -2,6 +2,8 @@
 
 This component implements standard implicit transport mathematics. It is not claimed as a novel integrator or a trained architecture. It is separate from the gate and competing-state forecasting experiments.
 
+**Follow-up:** it is now connected to jointly learned rates in the [coupled typed pilot](TYPED_RESOURCE_RESULTS.md), with complete state-dependent derivatives, and used in the [legal-edit pilot](TYPED_REPAIR_RESULTS.md). Those studies do not show a broad learning advantage. The component's restriction to known closed, one-for-one exchange still applies.
+
 ## Closed exchange pool
 
 Let x_i >= 0 be amounts in compatible units. An edge e transfers one unit of pool content from source s(e) to destination d(e) at nonnegative first-order rate k_e. Freeze rates during a step and form a column-conservative generator Q:

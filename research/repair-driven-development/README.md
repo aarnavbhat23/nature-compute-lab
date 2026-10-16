@@ -1,8 +1,10 @@
 # Repair-driven development
 
-**Status: October 15, 2026 research round complete.** Fixed-substrate and competing-state models are implemented, with 486 additional development fits and a separately tested conservative exchange component. Structural repair, a coupled typed solver, and selector learning remain unimplemented.
+**Latest status: October 15, 2026 follow-up complete.** Start with [RESEARCH_PROGRESS.md](RESEARCH_PROGRESS.md). A limited coupled typed solver and nonlearned legal-edge repair search are now implemented and tested in 333 additional training trials. The earlier round had 486 development fits. Learned repair selection, active experiments, and biological validation remain unimplemented.
 
-Start with the updated [architecture decision](ARCHITECTURE_DECISION.md) and [research results](RESEARCH_RESULTS.md). The recommendation is now a **typed reaction-and-repair substrate**. Read the [biological evidence](BIOLOGICAL_RULES.md), [focused novelty audit](NOVELTY_AUDIT.md), and optional [Claude Science critique prompt](CLAUDE_SCIENCE_REVIEW.md). No external review has been run. The original proposal below records the starting hypothesis; the architecture decision supersedes it where they differ.
+The [specific closed-loop audit](CLOSED_LOOP_PRECEDENTS.md) finds close precedents for the overall idea, including a demonstrated 2019 signaling/metabolic revision loop. The [coupled-model pilot](TYPED_RESOURCE_RESULTS.md) favors the conventional constrained neural head; the [legal-repair pilot](TYPED_REPAIR_RESULTS.md) finds no broad advantage over parameter adaptation. [Context and retention](CONTEXT_AND_RETENTION.md) now need a precise interface before the learned-selector stage.
+
+The earlier [architecture decision](ARCHITECTURE_DECISION.md) and [research results](RESEARCH_RESULTS.md) explain the **typed reaction-and-repair substrate** hypothesis. Read the [biological evidence](BIOLOGICAL_RULES.md), [focused novelty audit](NOVELTY_AUDIT.md), and optional [Claude Science critique prompt](CLAUDE_SCIENCE_REVIEW.md). No external review has been run. The original proposal below records the starting hypothesis; the latest progress and context correction supersede it where they differ.
 
 Start with [the first-task implementation and pilot protocol](FIRST_TASK.md). Results are linked there after execution.
 

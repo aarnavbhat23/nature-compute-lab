@@ -1,0 +1,31 @@
+{
+  "actual_training_trials": 261,
+  "forecast_arrays_verified": 216,
+  "edit_wins": 3,
+  "edit_ties": 6,
+  "retention_breaches": {
+    "edit": [
+      "parameter/1601",
+      "edge_ab/1601",
+      "edge_ba/1601",
+      "parameter/1709",
+      "edge_ab/1709",
+      "edge_ba/1709",
+      "parameter/1801",
+      "edge_ab/1801"
+    ],
+    "parameter": [
+      "parameter/1601",
+      "edge_ab/1601",
+      "edge_ba/1601",
+      "both/1601",
+      "none/1709",
+      "parameter/1709",
+      "edge_ab/1709",
+      "edge_ba/1709",
+      "parameter/1801",
+      "edge_ab/1801",
+      "edge_ba/1801"
+    ]
+  }
+}

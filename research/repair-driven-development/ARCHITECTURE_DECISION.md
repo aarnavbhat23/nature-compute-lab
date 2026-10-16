@@ -2,6 +2,8 @@
 
 **Date:** October 15, 2026. **Decision:** pursue a **typed reaction-and-repair substrate** as the next research architecture. This is the best justified direction from this round, not a validated best architecture or an established new category of AI. Its full structural-repair capability is not implemented.
 
+**Later follow-up:** [RESEARCH_PROGRESS.md](RESEARCH_PROGRESS.md) reports the now-implemented limited coupled solver and nonlearned legal repair pilot. The constrained neural rate head wins the fixed-model comparison, and legal edit selection shows no broad advantage over budget-matched parameter adaptation. The [context/retention correction](CONTEXT_AND_RETENTION.md) supersedes the earlier build sequence before selector learning. The [specific closed-loop audit](CLOSED_LOOP_PRECEDENTS.md) also identifies closer predecessors for the overall vision. The proposal below records the earlier reasoning and is not a claim that the new studies succeeded.
+
 ## Why the recommendation changed
 
 The first prototype treated all state coordinates as bounded computational compartments. That is useful for an engineering pilot, but it conflates measured amounts, regulatory activities, unmeasured environmental context, and abstract memory. Nature imposes different rules on these quantities. A representation should preserve a known closed-pool total when appropriate, allow known boundary flow in an open system, and avoid assigning fictitious molecular meaning to a hidden computational unit.

@@ -1,0 +1,65 @@
+{
+  "status": "complete",
+  "config": {
+    "status": "nonlearned legal-edit development diagnostic",
+    "seeds": [
+      1601,
+      1709,
+      1801
+    ],
+    "changes": [
+      "none",
+      "parameter",
+      "edge_ab",
+      "edge_ba",
+      "both",
+      "noise"
+    ],
+    "initial_learning_rates": [
+      0.003,
+      0.01,
+      0.03
+    ],
+    "initial_steps": 600,
+    "adaptation_steps": 300,
+    "edit_learning_rates": [
+      0.003,
+      0.01
+    ],
+    "parameter_learning_rates": [
+      0.0003,
+      0.001,
+      0.003,
+      0.006,
+      0.01,
+      0.02,
+      0.03,
+      0.06
+    ],
+    "adaptation_fit_trajectories": 3,
+    "adaptation_fit_intervals": 8,
+    "adaptation_validation_trajectories": 2,
+    "adaptation_validation_intervals": 32,
+    "future_trajectories": 16,
+    "future_intervals": 32,
+    "noise_standard_deviation": 0.01
+  },
+  "started_utc": "20261016T023951695435Z",
+  "source_commit": "2dd116ed7693e956ada2ec80034536a4e6618b5d",
+  "source_sha256": {
+    "run_typed_repair.py": "220a7c8f50e4d7e7c84d0256c7d9b31a1af6c0dc5a5859f10485eb7da203b1f6",
+    "configs/typed_repair_pilot.json": "09c96e1f3b4dd1422e35af7375ab56662690197db1581a99ab90d7310317822a",
+    "drs/typed.py": "1137946b3e569a8f6442f4612773670156b033ec0751b41642ba7282e439aa4b",
+    "drs/resource_systems.py": "8a861a34003608ad252bf9a7fb472057082fc940cc0694c0036e08d18cce5cc6",
+    "drs/repair_systems.py": "420d5ab597e43f365434def6514bece969ca25164c3b9c5bdc4170b56a523c5d",
+    "drs/training.py": "5827c19d9e136a8d2dcf3cc08862aa3c34504f7a43e9187efbd960afea468b6c",
+    "components/exchange.py": "6b1aa75c2d3280f4290cd62fa0639d29fdd407a9f1ca0b9898c86b0f508d58bc",
+    "tests/test_typed.py": "7813156756f8e804f004753b0cb4eb0ec378f27f2dec3d8808c8d99458956e23",
+    "research/repair-driven-development/TYPED_REPAIR_PROTOCOL.md": "b1c6e798626d5319f2b57fa738d7f714dab44f0194b46835eced78d3a4bca8dc"
+  },
+  "python": "3.13.5",
+  "numpy": "2.4.4",
+  "machine": "macOS-26.5.1-arm64-arm-64bit-Mach-O",
+  "openblas_num_threads": "1",
+  "finished_utc": "2026-10-16T02:41:02.343563+00:00"
+}

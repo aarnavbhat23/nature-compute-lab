@@ -2,6 +2,8 @@
 
 Research round: October 15, 2026. This is a primary-biological-literature audit and a set of engineering inferences. Later in the same round, the user authorized both biology-led research and closest-method checking; see [NOVELTY_AUDIT.md](NOVELTY_AUDIT.md). Novelty of the proposed joint architecture remains unverified.
 
+Later implementation status is recorded in [RESEARCH_PROGRESS.md](RESEARCH_PROGRESS.md): a limited closed-pool coupled model and nonlearned legal edits now exist, without a broad advantage over parameter adaptation. The original priorities below record the earlier research plan; learned repair, active measurements, general biochemical operators, and biological validation remain unimplemented.
+
 The design goal is to turn a biological rule into an explicit invariant, state variable, transition, learning action, and falsifiable prediction. Nature is not one algorithm; mechanisms that help one task can be harmful or irrelevant on another.
 
 ## 1. Alternative molecular states and allostery
