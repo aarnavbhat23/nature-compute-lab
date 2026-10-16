@@ -1,0 +1,148 @@
+{
+  "experiment": "06_stable_regimes",
+  "started_utc": "2026-10-15T16:08:23.732877+00:00",
+  "finished_utc": "2026-10-15T16:08:23.830848+00:00",
+  "source_commit": "ef2802936fd19fcf3f86d0e676f78756eff42a16",
+  "source_tree_dirty": true,
+  "source_files_sha256": {
+    "experiments/01_development.py": "b03f0e898a5aa5efcb79c1eb691242d343f415d5d4b64cf97200e7bcca9bfbc4",
+    "experiments/02_catalysts.py": "12f01cc964a10d11f0b955c67c292d790e83cbe90d2ef4900244b5164e6a189d",
+    "experiments/03_symbiosis.py": "740e0b9097c301ff8e45666ae83987cb0c56124c236f79d4eff822828f6459ad",
+    "experiments/04_repair.py": "3161c1b6fb9ec9f3095914fa9552e4857855710ad263c12ea76753e2eb1cc3f0",
+    "experiments/05_immune_memory.py": "40d057eb8fde5b20a1a31b90bfb7887c26b3d0765643b178374668582e355db8",
+    "experiments/06_stable_regimes.py": "9241cc7ad236bfdd4f8f84e9adc16b6c7d4c531005bdc75b5e59decdbd7c42c2",
+    "lab.py": "5c7c8f4d0856632c03539593f27dc887a9abfde7058cefd50607a14f44ae2e8e",
+    "run.py": "d83f6583c97841d757e14d58d943e3170174652c99a6952dc370f7eb18688f5c",
+    "tests/test_catalysts.py": "cc8dbcd674d379665ea7b4d46aa08a525a092126778fab3f5976299c02261279",
+    "tests/test_development.py": "d88c8d7587ece06e6a5972cb26c17448aadaf33c2b7f30a23c495238ca97b2d6",
+    "tests/test_immune.py": "b7be78465b17a472244976cb2cb2d3b5ddb92597c53167c55e083f10ab5727cf",
+    "tests/test_lab.py": "0667a9e12ef5a28737a1ead73aeaea56dd8c0cf34c59ef2f38b588b35ff545df",
+    "tests/test_regimes.py": "90083197e288d7e31a61e9c7106df069b8776ad08cfb9724e88a1a9102717e0e",
+    "tests/test_repair.py": "3f8aa740f13fbcc5655a50980515579258454c0e1536c41354462d8b8c4ca66a",
+    "tests/test_symbiosis.py": "d625bd6f47e9546905c61a400c5fb7e3cf64d74c1c5e10fdefe5d3cc068b2115"
+  },
+  "python": "3.13.5",
+  "numpy": "2.4.4",
+  "platform": "macOS-26.5.1-arm64-arm-64bit-Mach-O",
+  "rows": [
+    {
+      "seed": 7,
+      "elapsed_seconds": 0.02048533270135522,
+      "metrics": {
+        "hysteresis_error_rate": 0.004036458333333334,
+        "memoryless_error_rate": 0.13541666666666666,
+        "autoregressive_error_rate": 0.46236979166666664,
+        "transition_table_error_rate": 0.004296875
+      },
+      "details": {
+        "learned_low": -0.325,
+        "learned_high": 0.5,
+        "true_low": -0.31247136001859993,
+        "true_high": 0.5140248303393514,
+        "test_sequences": 32,
+        "test_steps": 240,
+        "training_label_flip_probability": 0.02,
+        "test_previous_labels_visible": false
+      }
+    },
+    {
+      "seed": 17,
+      "elapsed_seconds": 0.009950791019946337,
+      "metrics": {
+        "hysteresis_error_rate": 0.0014322916666666666,
+        "memoryless_error_rate": 0.07903645833333334,
+        "autoregressive_error_rate": 0.24609375,
+        "transition_table_error_rate": 0.015755208333333333
+      },
+      "details": {
+        "learned_low": -0.25,
+        "learned_high": 0.25,
+        "true_low": -0.24647756216062955,
+        "true_high": 0.25634058190918746,
+        "test_sequences": 32,
+        "test_steps": 240,
+        "training_label_flip_probability": 0.02,
+        "test_previous_labels_visible": false
+      }
+    },
+    {
+      "seed": 29,
+      "elapsed_seconds": 0.01002245768904686,
+      "metrics": {
+        "hysteresis_error_rate": 0.0014322916666666666,
+        "memoryless_error_rate": 0.140625,
+        "autoregressive_error_rate": 0.5240885416666666,
+        "transition_table_error_rate": 0.007161458333333333
+      },
+      "details": {
+        "learned_low": -0.475,
+        "learned_high": 0.375,
+        "true_low": -0.48498590889377935,
+        "true_high": 0.3772128045000073,
+        "test_sequences": 32,
+        "test_steps": 240,
+        "training_label_flip_probability": 0.02,
+        "test_previous_labels_visible": false
+      }
+    },
+    {
+      "seed": 43,
+      "elapsed_seconds": 0.010317541658878326,
+      "metrics": {
+        "hysteresis_error_rate": 0.0026041666666666665,
+        "memoryless_error_rate": 0.08190104166666666,
+        "autoregressive_error_rate": 0.27591145833333336,
+        "transition_table_error_rate": 0.002864583333333333
+      },
+      "details": {
+        "learned_low": -0.3,
+        "learned_high": 0.22499999999999998,
+        "true_low": -0.30431022118972684,
+        "true_high": 0.2153213632736488,
+        "test_sequences": 32,
+        "test_steps": 240,
+        "training_label_flip_probability": 0.02,
+        "test_previous_labels_visible": false
+      }
+    },
+    {
+      "seed": 71,
+      "elapsed_seconds": 0.010319374967366457,
+      "metrics": {
+        "hysteresis_error_rate": 0.0026041666666666665,
+        "memoryless_error_rate": 0.13125,
+        "autoregressive_error_rate": 0.52734375,
+        "transition_table_error_rate": 0.008463541666666666
+      },
+      "details": {
+        "learned_low": -0.425,
+        "learned_high": 0.375,
+        "true_low": -0.4239758967688092,
+        "true_high": 0.38463859247624904,
+        "test_sequences": 32,
+        "test_steps": 240,
+        "training_label_flip_probability": 0.02,
+        "test_previous_labels_visible": false
+      }
+    }
+  ],
+  "summary": {
+    "hysteresis_error_rate": {
+      "mean": 0.002421875,
+      "std": 0.0010760913287184578
+    },
+    "memoryless_error_rate": {
+      "mean": 0.11364583333333333,
+      "std": 0.030484799236398245
+    },
+    "autoregressive_error_rate": {
+      "mean": 0.4071614583333333,
+      "std": 0.13632044535238302
+    },
+    "transition_table_error_rate": {
+      "mean": 0.007708333333333333,
+      "std": 0.005018006854831795
+    }
+  },
+  "scope": "Synthetic proof of mechanism; no biological or ASI validation."
+}

@@ -3,6 +3,7 @@
 import argparse
 from datetime import datetime, timezone
 import importlib.util
+import hashlib
 import json
 from pathlib import Path
 import platform
@@ -41,6 +42,9 @@ def run_experiment(path, seeds):
         'experiment': path.stem, 'started_utc': started.isoformat(),
         'finished_utc': datetime.now(timezone.utc).isoformat(),
         'source_commit': source, 'source_tree_dirty': dirty,
+        'source_files_sha256': {str(p.relative_to(ROOT)): hashlib.sha256(p.read_bytes()).hexdigest()
+                                for p in sorted(ROOT.rglob('*.py'))
+                                if not any(part.startswith('.') or part == 'work' for part in p.relative_to(ROOT).parts)},
         'python': platform.python_version(), 'numpy': np.__version__,
         'platform': platform.platform(), 'rows': rows, 'summary': summary,
         'scope': 'Synthetic proof of mechanism; no biological or ASI validation.',
