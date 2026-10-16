@@ -1,0 +1,54 @@
+{
+  "status": "complete",
+  "started_utc": "20261016T023212260119Z",
+  "config": {
+    "status": "fixed coupled typed-model development pilot, not structural repair",
+    "mechanisms": [
+      "none",
+      "direct",
+      "resource",
+      "mixed"
+    ],
+    "seeds": [
+      1301,
+      1409,
+      1511
+    ],
+    "heads": [
+      "saturating",
+      "neural"
+    ],
+    "learning_rates": [
+      0.003,
+      0.01,
+      0.03
+    ],
+    "optimizer_steps": 600,
+    "batch_size": 8,
+    "train_trajectories": 32,
+    "train_intervals": 8,
+    "validation_trajectories": 8,
+    "validation_intervals": 32,
+    "heldout_trajectories": 16,
+    "heldout_intervals": 32,
+    "variance_floor": 0.0001,
+    "long_rollout_intervals": 128
+  },
+  "source_commit": "6877e7f33c4b51ff6592b9a6283b5c23817192eb",
+  "source_sha256": {
+    "run_typed_resource.py": "8e6f1d61f79512285ee8624fdb8066934559da244bfa68f945f1956c79e1ba4a",
+    "configs/typed_resource_pilot.json": "7a3d87b23404362f2fd96ff22c54dc6cd93c168548f83531f1639c57f93272c2",
+    "drs/typed.py": "5c8f75d95a3ecc3f4543e3cb285af684b2c643d2acca39d8eaaf3856e792c17c",
+    "drs/resource_systems.py": "8a861a34003608ad252bf9a7fb472057082fc940cc0694c0036e08d18cce5cc6",
+    "drs/training.py": "5827c19d9e136a8d2dcf3cc08862aa3c34504f7a43e9187efbd960afea468b6c",
+    "components/exchange.py": "6b1aa75c2d3280f4290cd62fa0639d29fdd407a9f1ca0b9898c86b0f508d58bc",
+    "tests/test_typed.py": "dd14c787460b4c9a878311f2ccc0a5d9836b0eb4395d882f1ccecdd46180e2b7",
+    "research/repair-driven-development/TYPED_RESOURCE_PROTOCOL.md": "e5d2a61a69d018a108496999946455e1f3a9dfbfef396c9f5d34501b8b000084"
+  },
+  "python": "3.13.5",
+  "numpy": "2.4.4",
+  "scipy": "1.17.1",
+  "openblas_num_threads": "1",
+  "machine": "macOS-26.5.1-arm64-arm-64bit-Mach-O",
+  "finished_utc": "2026-10-16T02:32:53.479300+00:00"
+}

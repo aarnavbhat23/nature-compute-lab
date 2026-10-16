@@ -12,12 +12,24 @@ from components.exchange import exchange_step, exchange_vjp
 class TypedDynamics:
     edges = np.array([[0, 1], [1, 0], [0, 2], [2, 0]])
 
-    def __init__(self, head='saturating', seed=0):
+    def __init__(self, head='saturating', seed=0, extra_edges=()):
         if head not in ['saturating', 'neural']:
             raise ValueError(head)
         self.head = head
-        self.shapes = ([(12, 9), (12, 9), (12,)] if head == 'saturating'
-                       else [(9, 10), (10,), (10, 12), (12,)])
+        extra = np.asarray(extra_edges)
+        if extra.size:
+            if extra.ndim != 2 or extra.shape[1] != 2 or not np.issubdtype(extra.dtype, np.integer):
+                raise ValueError('Exchange edits require integer source/destination pairs')
+            proposed = [tuple(edge) for edge in extra]
+            if len(set(proposed)) != len(proposed) or any(edge not in [(1, 2), (2, 1)] for edge in proposed):
+                raise ValueError('Only distinct bound-A/bound-B exchanges are allowed edits')
+            self.edges = np.vstack([type(self).edges, extra])
+        else:
+            self.edges = type(self).edges.copy()
+        self.edge_count = len(self.edges)
+        outputs = self.edge_count+8
+        self.shapes = ([(outputs, 9), (outputs, 9), (outputs,)] if head == 'saturating'
+                       else [(9, 10), (10,), (10, outputs), (outputs,)])
         self.slices = []
         offset = 0
         for shape in self.shapes:
@@ -27,13 +39,34 @@ class TypedDynamics:
         rng = np.random.default_rng(seed)
         self.theta = np.zeros(offset+2)
         if head == 'saturating':
-            self.theta[self.slices[0]] = rng.normal(0, .3, 108)
+            self.theta[self.slices[0]] = rng.normal(0, .3, outputs*9)
             self.theta[self.slices[1]] = logit((.3-.02)/1.98)
         else:
             self.theta[self.slices[0]] = rng.normal(0, .2, 90)
-            self.theta[self.slices[2]] = rng.normal(0, .15, 120)
+            self.theta[self.slices[2]] = rng.normal(0, .15, 10*outputs)
         self.theta[self.slices[-1]] = logit(.4/2)
         self.theta[-2:] = rng.normal(0, .2, 2)
+
+    def add_exchange_edges(self, edges):
+        """Warm-start a valid expansion; new rates start at approximately 0.01001.
+
+        Existing rate functions and memory starts are copied exactly. The new
+        physical transfer is small but nonzero, so rollouts are not identical.
+        """
+        model = TypedDynamics(self.head, extra_edges=[*self.edges[4:].tolist(), *edges])
+        old = [self.theta[s].reshape(shape) for s, shape in zip(self.slices, self.shapes)]
+        new = [model.theta[s].reshape(shape) for s, shape in zip(model.slices, model.shapes)]
+        index = [list(map(tuple, model.edges)).index(tuple(edge)) for edge in self.edges]
+        index += list(range(model.edge_count, model.edge_count+8))
+        if self.head == 'neural':
+            new[0][:] = old[0];new[1][:] = old[1]
+            new[2][:] = 0;new[3][:] = logit(.00001/2)
+            new[2][:, index] = old[2];new[3][index] = old[3]
+        else:
+            new[0][:] = 0;new[2][:] = logit(.00001/2)
+            for a, b in zip(new, old):a[index] = b
+        model.theta[-2:] = self.theta[-2:]
+        return model
 
     def rates(self, state, inputs):
         x = np.column_stack([state, inputs])
@@ -76,8 +109,9 @@ class TypedDynamics:
 
     def step(self, state, inputs, delta):
         rates, rate_cache = self.rates(state, inputs)
-        pools, exchange_cache = exchange_step(state[:, :3], rates[:, :4], self.edges, delta, True)
-        p, d = rates[:, 4:8], rates[:, 8:12]
+        e = self.edge_count
+        pools, exchange_cache = exchange_step(state[:, :3], rates[:, :e], self.edges, delta, True)
+        p, d = rates[:, e:e+4], rates[:, e+4:e+8]
         denominator = 1+delta*(p+d)
         bounded = (state[:, 3:]+delta*p)/denominator
         return np.column_stack([pools, bounded]), (exchange_cache, bounded, denominator, rate_cache, delta)

@@ -1,0 +1,17 @@
+{
+  "status": "nonlearned legal-edit development diagnostic",
+  "seeds": [1601, 1709, 1801],
+  "changes": ["none", "parameter", "edge_ab", "edge_ba", "both", "noise"],
+  "initial_learning_rates": [0.003, 0.01, 0.03],
+  "initial_steps": 600,
+  "adaptation_steps": 300,
+  "edit_learning_rates": [0.003, 0.01],
+  "parameter_learning_rates": [0.0003, 0.001, 0.003, 0.006, 0.01, 0.02, 0.03, 0.06],
+  "adaptation_fit_trajectories": 3,
+  "adaptation_fit_intervals": 8,
+  "adaptation_validation_trajectories": 2,
+  "adaptation_validation_intervals": 32,
+  "future_trajectories": 16,
+  "future_intervals": 32,
+  "noise_standard_deviation": 0.01
+}
