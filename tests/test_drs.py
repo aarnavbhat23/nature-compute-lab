@@ -4,13 +4,14 @@ import unittest
 import numpy as np
 
 from drs.models import Substrate, NeuralRates
+from drs.occupancy import OccupancyRates
 from drs.systems import System, dataset
 
 
 class SubstrateTests(unittest.TestCase):
     def test_unrolled_parameter_gradients(self):
         rng = np.random.default_rng(44)
-        for model in [Substrate(q=2, hidden=1, seed=3), NeuralRates(q=2, hidden=1, seed=3, budget=80)]:
+        for model in [Substrate(q=2, hidden=1, seed=3), NeuralRates(q=2, hidden=1, seed=3, budget=80), OccupancyRates(q=2, hidden=1, seed=3)]:
             initial = rng.uniform(.1,.9,(2,2))
             inputs = rng.uniform(.1,.9,(2,3,2))
             target = rng.uniform(.1,.9,(2,3,2))
@@ -29,7 +30,7 @@ class SubstrateTests(unittest.TestCase):
 
     def test_state_jacobian_vector_product(self):
         rng=np.random.default_rng(92)
-        for model in [Substrate(q=2,hidden=1),NeuralRates(q=2,hidden=1,budget=80)]:
+        for model in [Substrate(q=2,hidden=1),NeuralRates(q=2,hidden=1,budget=80),OccupancyRates(q=2,hidden=1)]:
             h=rng.uniform(.1,.9,(2,3));u=rng.uniform(.1,.9,(2,2))
             gp=rng.normal(size=h.shape);gd=rng.normal(size=h.shape)
             _,_,cache=model.rates(h,u)
@@ -54,6 +55,24 @@ class SubstrateTests(unittest.TestCase):
         for value in [-.1,np.nan,1.1]:
             with self.assertRaises(ValueError):
                 model.rollout(np.array([[value,.5]]),np.ones((1,2,2)))
+
+    def test_competing_state_capacity(self):
+        model=OccupancyRates(q=2,hidden=1)
+        rng=np.random.default_rng(52)
+        model.theta[:]=rng.normal(0,8,len(model.theta))
+        p,d,cache=model.rates(rng.uniform(0,1,(5,3)),rng.uniform(0,1,(5,2)))
+        self.assertTrue((cache[2].sum(axis=2)<=1+1e-14).all())
+        self.assertTrue(((p>=.01)&(p<=2.01)).all())
+        self.assertTrue(((d>=.01)&(d<=2.01)).all())
+        self.assertEqual(len(OccupancyRates().theta),820)
+
+    def test_half_inhibition_is_insensitive(self):
+        model=Substrate(q=2,hidden=1)
+        model.theta[model.rho_indices]=0
+        p1,d1,_=model.rates(np.full((1,3),.1),np.full((1,2),.1))
+        p2,d2,_=model.rates(np.full((1,3),.9),np.full((1,2),.9))
+        np.testing.assert_allclose(p1,p2,atol=1e-15)
+        np.testing.assert_allclose(d1,d2,atol=1e-15)
 
     def test_resource_cap(self):
         model=Substrate()
