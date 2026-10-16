@@ -1,0 +1,54 @@
+{
+  "status": "complete",
+  "config": {
+    "status": "paired validation-horizon development diagnostic",
+    "families": [
+      "saturating",
+      "polynomial",
+      "forced_sinusoidal"
+    ],
+    "seeds": [
+      1009,
+      1103,
+      1201
+    ],
+    "models": [
+      "original",
+      "occupancy",
+      "neural_730",
+      "neural_808"
+    ],
+    "optimizer_steps": 960,
+    "learning_rates": [
+      0.003,
+      0.01,
+      0.03
+    ],
+    "validation_horizons": [
+      12,
+      48
+    ],
+    "train_trajectories": 32,
+    "validation_trajectories": 8,
+    "heldout_trajectories": 16,
+    "train_intervals": 8,
+    "validation_intervals": 48,
+    "heldout_intervals": 48
+  },
+  "started_utc": "20261016T020716259962Z",
+  "numpy": "2.4.4",
+  "source_commit": "9ecf8a6b48c3e844860f71ba876e6fe719d3a4cd",
+  "source_sha256": {
+    "run_nature_horizon.py": "73117f303f90bba74bb360114e21260a0c83da2718e7b397507f2575d3c24733",
+    "run_nature_diagnostic.py": "40d7fcb130d2a03144f3b803b56bbba55b9ea9124840ea62ddc1ef9b3e07391c",
+    "drs/__init__.py": "6b87759b7874bed027fa972a282b37aa7cb9a4c218319a06f4a6c0043cc629f0",
+    "drs/models.py": "47d70d87b5bd74d3293047e8c63f5b879bcb8a3931f0ff01b31230977623d627",
+    "drs/occupancy.py": "bb5f9f2dd45ae2b31272df24318781641c283a7da5411b29cf394e01b6258da0",
+    "drs/systems.py": "639242518e7d0031eaf600afe775b476aec61e05809269fd3435f3b36a0ee29b",
+    "drs/timed_training.py": "b5eaf5b9da95d2bfd1868e7bb00cea2b6f062beec9f5d8ce28b1c63f7186b5c1",
+    "drs/training.py": "5827c19d9e136a8d2dcf3cc08862aa3c34504f7a43e9187efbd960afea468b6c",
+    "configs/nature_horizon.json": "1cb01dae3c3ebda102722a1e66057613428c081a5ace1d0a4c9b9b7787c17476",
+    "research/repair-driven-development/HORIZON_PROTOCOL.md": "a56725479b88af2856bb23d8ca36b5c2931b0d9423127b4860de9ff688036f42"
+  },
+  "finished_utc": "2026-10-16T02:09:30.899066+00:00"
+}

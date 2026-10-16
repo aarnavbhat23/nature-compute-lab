@@ -1,6 +1,8 @@
 # Repair-driven development
 
-**Status: architecture proposal with a fixed-substrate pilot implemented October 15, 2026. Structural repair and selector learning remain unimplemented.**
+**Status: October 15, 2026 research round complete.** Fixed-substrate and competing-state models are implemented, with 486 additional development fits and a separately tested conservative exchange component. Structural repair, a coupled typed solver, and selector learning remain unimplemented.
+
+Start with the updated [architecture decision](ARCHITECTURE_DECISION.md) and [research results](RESEARCH_RESULTS.md). The recommendation is now a **typed reaction-and-repair substrate**. Read the [biological evidence](BIOLOGICAL_RULES.md), [focused novelty audit](NOVELTY_AUDIT.md), and optional [Claude Science critique prompt](CLAUDE_SCIENCE_REVIEW.md). No external review has been run. The original proposal below records the starting hypothesis; the architecture decision supersedes it where they differ.
 
 Start with [the first-task implementation and pilot protocol](FIRST_TASK.md). Results are linked there after execution.
 
@@ -62,7 +64,7 @@ Trainable local interactions are the first representational hypothesis. A learne
 
 Version zero fits one substrate per system and transfers the repair selector across systems. It is not yet a single pretrained model spanning biological entities. This scope keeps the first transfer claim testable.
 
-The equations use familiar tools from dynamical systems, optimization, and model selection. Giving these tools biological names would not establish novelty. The candidate contribution is the precisely specified combination and the transferable repair behavior, if either survives comparison. No search of closest AI precedents was performed for this proposal, following the user's preference; architectural novelty remains unverified.
+The equations use familiar tools from dynamical systems, optimization, and model selection. Giving these tools biological names would not establish novelty. The candidate contribution is the precisely specified combination and the transferable repair behavior, if either survives comparison. The initial proposal omitted closest AI precedents at the user's request. During the subsequent research round, the user authorized both biology-led exploration and a focused comparison; [that audit](NOVELTY_AUDIT.md) finds substantial overlap and leaves the exact joint contribution unverified.
 
 ## What to build first
 

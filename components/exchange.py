@@ -32,6 +32,6 @@ def exchange_step(state,rates,edges,delta,return_cache=False):
 def exchange_vjp(output_gradient,cache):
     matrix,next_state,edges,delta=cache
     adjoint=np.linalg.solve(matrix.transpose(0,2,1),np.asarray(output_gradient)[:,:,None])[:,:,0]
-    rate_gradient=np.stack([delta*next_state[:,source]*(adjoint[:,dest]-adjoint[:,source])
-                            for source,dest in edges],axis=1)
+    rate_gradient=(np.stack([delta*next_state[:,source]*(adjoint[:,dest]-adjoint[:,source])
+                            for source,dest in edges],axis=1) if len(edges) else np.empty((len(adjoint),0)))
     return adjoint,rate_gradient

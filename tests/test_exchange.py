@@ -46,6 +46,14 @@ class ExchangeTests(unittest.TestCase):
             errors.append(np.linalg.norm(y[0]-truth))
         self.assertTrue(errors[2]<errors[1]<errors[0])
 
+    def test_empty_exchange_is_identity(self):
+        x=np.array([[.2,.8]])
+        y,cache=exchange_step(x,np.empty((1,0)),np.empty((0,2),dtype=int),1,True)
+        np.testing.assert_array_equal(y,x)
+        dx,dk=exchange_vjp(np.ones_like(x),cache)
+        np.testing.assert_array_equal(dx,np.ones_like(x))
+        self.assertEqual(dk.shape,(1,0))
+
     def test_invalid_inputs_are_rejected(self):
         for rates in [np.array([[-1.]]),np.array([[np.inf]])]:
             with self.assertRaises(ValueError):

@@ -28,9 +28,10 @@ Answer these questions:
 3. Is the distinction between conserved measured amounts, bounded regulatory activity, and abstract memory defensible? What measurements or prior knowledge are required to assign these types without inventing constraints?
 4. Do the fixed-update and fixed-wall-time comparisons actually support the interpretation in the results report? Look for hidden hyperparameter selection, incompatible resource accounting, data leakage, unidentifiability, and conclusions that exceed three seeds per family.
 5. Propose one small experiment that could most efficiently falsify the architecture's central research claim. Specify the competing explanations and an outcome that would make you reject the idea.
-6. Give your strongest disagreement with the proposed next step. Identify an equally plausible simpler model or explanation without conducting a broad AI-prior-art survey.
+6. Give your strongest disagreement with the proposed next step. Identify an equally plausible simpler model or explanation.
+7. Check the specific overlap and remaining distinctions in `NOVELTY_AUDIT.md`. The user has now authorized a focused closest-method comparison. Identify any claimed distinction that is already covered by a cited method; provide a verifiable primary reference instead of asserting novelty or relying on another AI summary.
 
-Use primary biological or mathematical sources where necessary. Separate source-supported facts, mathematical deductions, and speculative suggestions. Do not invent references or imply that this architecture is unprecedented. We have not yet authorized a separate closest-method novelty survey in this review prompt.
+Use primary biological or mathematical sources where necessary. Separate source-supported facts, mathematical deductions, and speculative suggestions. Do not invent references or imply that this architecture is unprecedented. A focused closest-method novelty survey is now authorized; distinguish an unverified joint formulation from a demonstrated novel contribution.
 
 Return a concise review with: fatal issues, repairable issues, claims supported by current evidence, claims unsupported, and the single proposed falsification experiment.
 

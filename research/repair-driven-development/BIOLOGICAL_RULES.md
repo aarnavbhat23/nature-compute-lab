@@ -1,6 +1,6 @@
 # Biological rules worth turning into computation
 
-Research round: October 15, 2026. This is a primary-biological-literature audit and a set of engineering inferences, not a search of closest AI precedents. Novelty relative to existing AI architectures remains unverified, in accordance with the user's earlier request not to center brainstorming on those precedents.
+Research round: October 15, 2026. This is a primary-biological-literature audit and a set of engineering inferences. Later in the same round, the user authorized both biology-led research and closest-method checking; see [NOVELTY_AUDIT.md](NOVELTY_AUDIT.md). Novelty of the proposed joint architecture remains unverified.
 
 The design goal is to turn a biological rule into an explicit invariant, state variable, transition, learning action, and falsifiable prediction. Nature is not one algorithm; mechanisms that help one task can be harmful or irrelevant on another.
 
