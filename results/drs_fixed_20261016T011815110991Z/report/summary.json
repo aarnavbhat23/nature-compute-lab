@@ -1,0 +1,59 @@
+{
+  "families": {
+    "saturating": {
+      "substrate": {
+        "mean": 0.008367773678210224,
+        "sample_sd": 0.0025814423268110424
+      },
+      "neural_rates": {
+        "mean": 0.004199062034751617,
+        "sample_sd": 0.0018307207047883103
+      },
+      "affine": {
+        "mean": 0.007034934980395727,
+        "sample_sd": 0.005061800426691176
+      },
+      "persistence": {
+        "mean": 3.8710694918982447,
+        "sample_sd": 0.14664042871698263
+      }
+    },
+    "polynomial": {
+      "substrate": {
+        "mean": 0.03092354126739692,
+        "sample_sd": 0.009548747706417433
+      },
+      "neural_rates": {
+        "mean": 0.009158073513002721,
+        "sample_sd": 0.0013585871822431063
+      },
+      "affine": {
+        "mean": 0.012786380461419819,
+        "sample_sd": 0.004092373775312964
+      },
+      "persistence": {
+        "mean": 1.6850844238239733,
+        "sample_sd": 0.08408523302620208
+      }
+    },
+    "forced_sinusoidal": {
+      "substrate": {
+        "mean": 0.09551567462238031,
+        "sample_sd": 0.04506805990261961
+      },
+      "neural_rates": {
+        "mean": 0.09197192603873439,
+        "sample_sd": 0.07248495975867021
+      },
+      "affine": {
+        "mean": 0.06304876119798163,
+        "sample_sd": 0.02748792869322424
+      },
+      "persistence": {
+        "mean": 2.559309859840254,
+        "sample_sd": 0.08260104120778318
+      }
+    }
+  },
+  "analysis_source_sha256": "9ed18e56e8b7b7fb10f04e3220e9edf24f42e6566a56aff4477cf6511b2baa2c"
+}

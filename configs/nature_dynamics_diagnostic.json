@@ -1,0 +1,19 @@
+{
+  "status": "fresh development diagnostic, not confirmatory",
+  "families": ["saturating", "polynomial", "forced_sinusoidal"],
+  "seeds": [401, 503, 601],
+  "models": ["original", "polarized", "occupancy", "neural_730", "neural_808"],
+  "optimizer_budgets": [240, 960],
+  "learning_rates": [0.003, 0.01, 0.03],
+  "train_trajectories": 32,
+  "validation_trajectories": 8,
+  "heldout_trajectories": 16,
+  "train_intervals": 8,
+  "validation_intervals": 12,
+  "heldout_intervals": 48,
+  "q": 8,
+  "hidden": 4,
+  "batch_size": 8,
+  "observation_interval": 0.2,
+  "variance_floor": 0.0001
+}

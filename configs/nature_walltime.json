@@ -1,0 +1,12 @@
+{
+  "status": "implementation-specific wall-time development follow-up",
+  "families": ["saturating", "polynomial", "forced_sinusoidal"],
+  "seeds": [701, 809, 907],
+  "models": ["original", "occupancy", "neural_730", "neural_808"],
+  "seconds_per_trial": 1.5,
+  "learning_rates": [0.003, 0.01, 0.03],
+  "train_trajectories": 32,
+  "validation_trajectories": 8,
+  "heldout_trajectories": 16,
+  "batch_size": 8
+}

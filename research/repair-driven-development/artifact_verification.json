@@ -1,0 +1,30 @@
+{
+  "training_trials": 486,
+  "paired_horizon_individual_improvements": 31,
+  "studies": [
+    {
+      "study": "updates",
+      "path": "nature_diagnostic_20261016T015441102245Z",
+      "source_commit": "7ba04025eab6e4191a76f94a35b23e4780e82854",
+      "cases": 9,
+      "forecasts_reloaded": 99,
+      "checks": "source hashes, disjoint initial states, variance, saved forecasts, metrics, validation selection"
+    },
+    {
+      "study": "walltime",
+      "path": "nature_walltime_20261016T020053486333Z",
+      "source_commit": "fab43d33f37674cc2c97ce673ed2efc213ba3ce8",
+      "cases": 9,
+      "forecasts_reloaded": 45,
+      "checks": "source hashes, disjoint initial states, variance, saved forecasts, metrics, validation selection"
+    },
+    {
+      "study": "horizon",
+      "path": "nature_horizon_20261016T020716259962Z",
+      "source_commit": "9ecf8a6b48c3e844860f71ba876e6fe719d3a4cd",
+      "cases": 9,
+      "forecasts_reloaded": 72,
+      "checks": "source hashes, disjoint initial states, variance, saved forecasts, metrics, validation selection"
+    }
+  ]
+}

@@ -36,4 +36,6 @@ The runner writes seed-level measurements, an aggregate, timings, the source rev
 
 See [PROTOCOL.md](PROTOCOL.md) for the initial evaluation plan. Code and results will be committed as separate experiments are completed, with actual commit times. Negative results stay in the record. No biological sequences, private data, or live experiments are used in this first pass.
 
+The subsequent architecture research is documented in [repair-driven development](research/repair-driven-development/README.md). Start with the [architecture decision](research/repair-driven-development/ARCHITECTURE_DECISION.md), [486-trial development report](research/repair-driven-development/RESEARCH_RESULTS.md), and [focused novelty audit](research/repair-driven-development/NOVELTY_AUDIT.md). The proposed typed reaction-and-repair system is a research direction; its full coupled solver and learned structural repair remain to be built. Current prototypes do not consistently outperform conventional controls.
+
 Developed with Codex assistance. The implementation and documentation are intended to make every reported number reproducible and every limitation visible.

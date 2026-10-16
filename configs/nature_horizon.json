@@ -1,0 +1,15 @@
+{
+  "status": "paired validation-horizon development diagnostic",
+  "families": ["saturating", "polynomial", "forced_sinusoidal"],
+  "seeds": [1009, 1103, 1201],
+  "models": ["original", "occupancy", "neural_730", "neural_808"],
+  "optimizer_steps": 960,
+  "learning_rates": [0.003, 0.01, 0.03],
+  "validation_horizons": [12, 48],
+  "train_trajectories": 32,
+  "validation_trajectories": 8,
+  "heldout_trajectories": 16,
+  "train_intervals": 8,
+  "validation_intervals": 48,
+  "heldout_intervals": 48
+}

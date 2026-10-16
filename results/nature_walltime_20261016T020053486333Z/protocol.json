@@ -1,0 +1,50 @@
+{
+  "status": "complete",
+  "config": {
+    "status": "implementation-specific wall-time development follow-up",
+    "families": [
+      "saturating",
+      "polynomial",
+      "forced_sinusoidal"
+    ],
+    "seeds": [
+      701,
+      809,
+      907
+    ],
+    "models": [
+      "original",
+      "occupancy",
+      "neural_730",
+      "neural_808"
+    ],
+    "seconds_per_trial": 1.5,
+    "learning_rates": [
+      0.003,
+      0.01,
+      0.03
+    ],
+    "train_trajectories": 32,
+    "validation_trajectories": 8,
+    "heldout_trajectories": 16,
+    "batch_size": 8
+  },
+  "started_utc": "20261016T020053486333Z",
+  "machine": "macOS-26.5.1-arm64-arm-64bit-Mach-O",
+  "python": "3.13.5",
+  "numpy": "2.4.4",
+  "source_commit": "fab43d33f37674cc2c97ce673ed2efc213ba3ce8",
+  "source_sha256": {
+    "run_nature_walltime.py": "2c079bc7e467f5c060963b35bebad71f26c15cfba453e682c06b13ad6bf22cb6",
+    "run_nature_diagnostic.py": "40d7fcb130d2a03144f3b803b56bbba55b9ea9124840ea62ddc1ef9b3e07391c",
+    "drs/__init__.py": "6b87759b7874bed027fa972a282b37aa7cb9a4c218319a06f4a6c0043cc629f0",
+    "drs/models.py": "47d70d87b5bd74d3293047e8c63f5b879bcb8a3931f0ff01b31230977623d627",
+    "drs/occupancy.py": "bb5f9f2dd45ae2b31272df24318781641c283a7da5411b29cf394e01b6258da0",
+    "drs/systems.py": "639242518e7d0031eaf600afe775b476aec61e05809269fd3435f3b36a0ee29b",
+    "drs/timed_training.py": "b5eaf5b9da95d2bfd1868e7bb00cea2b6f062beec9f5d8ce28b1c63f7186b5c1",
+    "drs/training.py": "5827c19d9e136a8d2dcf3cc08862aa3c34504f7a43e9187efbd960afea468b6c",
+    "configs/nature_walltime.json": "a2e86d3a105209c99badddb31295bcff717179e287d9dca077298a602dcad0f4",
+    "research/repair-driven-development/WALLTIME_PROTOCOL.md": "8ea77f6fe1165456ac9f7ee81fcd6c005f94cf3a699e876d78781e10e0fb666e"
+  },
+  "finished_utc": "2026-10-16T02:03:37.134475+00:00"
+}
