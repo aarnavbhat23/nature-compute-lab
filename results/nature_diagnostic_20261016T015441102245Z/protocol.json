@@ -1,0 +1,60 @@
+{
+  "status": "complete",
+  "started_utc": "20261016T015441102245Z",
+  "config": {
+    "status": "fresh development diagnostic, not confirmatory",
+    "families": [
+      "saturating",
+      "polynomial",
+      "forced_sinusoidal"
+    ],
+    "seeds": [
+      401,
+      503,
+      601
+    ],
+    "models": [
+      "original",
+      "polarized",
+      "occupancy",
+      "neural_730",
+      "neural_808"
+    ],
+    "optimizer_budgets": [
+      240,
+      960
+    ],
+    "learning_rates": [
+      0.003,
+      0.01,
+      0.03
+    ],
+    "train_trajectories": 32,
+    "validation_trajectories": 8,
+    "heldout_trajectories": 16,
+    "train_intervals": 8,
+    "validation_intervals": 12,
+    "heldout_intervals": 48,
+    "q": 8,
+    "hidden": 4,
+    "batch_size": 8,
+    "observation_interval": 0.2,
+    "variance_floor": 0.0001
+  },
+  "source_commit": "7ba04025eab6e4191a76f94a35b23e4780e82854",
+  "source_sha256": {
+    "run_nature_diagnostic.py": "40d7fcb130d2a03144f3b803b56bbba55b9ea9124840ea62ddc1ef9b3e07391c",
+    "drs/__init__.py": "6b87759b7874bed027fa972a282b37aa7cb9a4c218319a06f4a6c0043cc629f0",
+    "drs/models.py": "47d70d87b5bd74d3293047e8c63f5b879bcb8a3931f0ff01b31230977623d627",
+    "drs/occupancy.py": "bb5f9f2dd45ae2b31272df24318781641c283a7da5411b29cf394e01b6258da0",
+    "drs/systems.py": "639242518e7d0031eaf600afe775b476aec61e05809269fd3435f3b36a0ee29b",
+    "drs/training.py": "5827c19d9e136a8d2dcf3cc08862aa3c34504f7a43e9187efbd960afea468b6c",
+    "configs/nature_dynamics_diagnostic.json": "faa9193fb0908c6b2de764e284d656f1a6f456b6b03e7864ca2a1d6fa25df43d",
+    "research/repair-driven-development/NATURE_DIAGNOSTIC.md": "9fe329668c9bf69a9adb7574c1c19cec13f9aaf94e3608f127d83cbd777acb7b"
+  },
+  "python": "3.13.5",
+  "numpy": "2.4.4",
+  "scipy": "1.17.1",
+  "machine": "macOS-26.5.1-arm64-arm-64bit-Mach-O",
+  "finished_utc": "2026-10-16T01:58:32.570121+00:00"
+}
