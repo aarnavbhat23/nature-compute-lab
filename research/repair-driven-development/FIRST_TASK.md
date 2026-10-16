@@ -57,4 +57,4 @@ The runner requires committed, clean source before creating a new timestamped re
 
 ## Results
 
-Pending the first frozen pilot run. Any result link or interpretation added after execution must be labeled as such. The seven earlier mechanism experiments and their remaining scheduled checkpoints are unchanged.
+**Post-run addition, October 15, 2026:** [the completed pilot report](../../results/drs_fixed_20261016T011815110991Z/report/results.md) records all nine cases, including negative comparisons. The substrate learned useful forecasts and passed numerical checks, but had higher family-mean forecast error than the neural control on all three families. This does not test structural repair. The seven earlier mechanism experiments and their remaining scheduled checkpoints are unchanged.
