@@ -37,3 +37,20 @@ The runner writes seed-level measurements, an aggregate, timings, the source rev
 See [PROTOCOL.md](PROTOCOL.md) for the initial evaluation plan. Code and results will be committed as separate experiments are completed, with actual commit times. Negative results stay in the record. No biological sequences, private data, or live experiments are used in this first pass.
 
 The implementation and documentation are intended to make every reported number reproducible and every limitation visible.
+
+## Initial findings
+
+All seven mechanism probes are implemented. The [comparison](report/comparison.md) reports each prototype against its own controls. It is not a cross-task leaderboard.
+
+- Development transfers across cascade depth, but is comparable to the fixed nonlinear dictionary.
+- Catalytic selection and compact partnerships help on supplied, favorable operation families.
+- Sparse repair helps after a sparse simulated mechanism change.
+- The immune repertoire loses to forgetting regression.
+- Hysteresis works on a matched switch generator; a state table is competitive.
+- Asynchronous clocks reduce update counts but lose in error to a similar-budget uniform clock.
+
+Read the [experiment notes](notes) before interpreting the numbers. The final verification reruns the same five seeds; it does not create additional independent evidence.
+
+## Checkpoint history
+
+The first five studies were committed at completion. After a request for daily checkpoints, the remaining prototypes were prepared and tested locally, then reverified and committed by scheduled runs. Commit timestamps reflect those actual runs and do not represent the full duration or origin of the work.
