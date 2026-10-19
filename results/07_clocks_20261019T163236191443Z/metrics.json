@@ -1,0 +1,441 @@
+{
+  "experiment": "07_clocks",
+  "started_utc": "2026-10-19T16:32:36.191443+00:00",
+  "finished_utc": "2026-10-19T16:32:36.793565+00:00",
+  "source_commit": "61390eed7d13649520db37d796d8766cfe60fc91",
+  "source_tree_dirty": true,
+  "source_files_sha256": {
+    "experiments/01_development.py": "b03f0e898a5aa5efcb79c1eb691242d343f415d5d4b64cf97200e7bcca9bfbc4",
+    "experiments/02_catalysts.py": "12f01cc964a10d11f0b955c67c292d790e83cbe90d2ef4900244b5164e6a189d",
+    "experiments/03_symbiosis.py": "740e0b9097c301ff8e45666ae83987cb0c56124c236f79d4eff822828f6459ad",
+    "experiments/04_repair.py": "3161c1b6fb9ec9f3095914fa9552e4857855710ad263c12ea76753e2eb1cc3f0",
+    "experiments/05_immune_memory.py": "40d057eb8fde5b20a1a31b90bfb7887c26b3d0765643b178374668582e355db8",
+    "experiments/06_stable_regimes.py": "9241cc7ad236bfdd4f8f84e9adc16b6c7d4c531005bdc75b5e59decdbd7c42c2",
+    "experiments/07_clocks.py": "546bb75c13c51b3c0917219fa4b79aa3a15d5c2ba47829f8726057e25253dc24",
+    "lab.py": "5c7c8f4d0856632c03539593f27dc887a9abfde7058cefd50607a14f44ae2e8e",
+    "run.py": "d83f6583c97841d757e14d58d943e3170174652c99a6952dc370f7eb18688f5c",
+    "summarize.py": "d5ad02730dc68e1a9152e8b0472e31e9987fcca392be97aac89242a77d129d8b",
+    "tests/test_catalysts.py": "cc8dbcd674d379665ea7b4d46aa08a525a092126778fab3f5976299c02261279",
+    "tests/test_clocks.py": "4d65ee78bf1aef4c09c1a4b57fd01b5109d2b6e2a7fd360adf150dc8abd153a3",
+    "tests/test_development.py": "d88c8d7587ece06e6a5972cb26c17448aadaf33c2b7f30a23c495238ca97b2d6",
+    "tests/test_immune.py": "b7be78465b17a472244976cb2cb2d3b5ddb92597c53167c55e083f10ab5727cf",
+    "tests/test_lab.py": "0667a9e12ef5a28737a1ead73aeaea56dd8c0cf34c59ef2f38b588b35ff545df",
+    "tests/test_regimes.py": "90083197e288d7e31a61e9c7106df069b8776ad08cfb9724e88a1a9102717e0e",
+    "tests/test_repair.py": "3f8aa740f13fbcc5655a50980515579258454c0e1536c41354462d8b8c4ca66a",
+    "tests/test_symbiosis.py": "d625bd6f47e9546905c61a400c5fb7e3cf64d74c1c5e10fdefe5d3cc068b2115"
+  },
+  "python": "3.13.5",
+  "numpy": "2.4.4",
+  "platform": "macOS-26.5.1-arm64-arm-64bit-Mach-O",
+  "rows": [
+    {
+      "seed": 7,
+      "elapsed_seconds": 0.16384375000052387,
+      "metrics": {
+        "asynchronous_mse": 3.453933268198076e-05,
+        "fitted_dense_mse": 2.1229567924122365e-05,
+        "uniform_clock_mse": 3.8356829063870415e-05,
+        "extra_mse_vs_fitted_dense": 3.8102862145347676e-05,
+        "asynchronous_updates": 2500,
+        "dense_updates": 5400,
+        "uniform_clock_updates": 2484,
+        "dense_to_async_update_ratio": 2.16,
+        "rate_relative_mae": 0.016565085728532106
+      },
+      "details": {
+        "true_rates": [
+          0.7621103026178466,
+          2.3043909942250034,
+          1.4058780088598408,
+          0.14991614611637027,
+          0.2033386490708668,
+          2.0930227554511327
+        ],
+        "learned_rates": [
+          0.7523807632687292,
+          2.3155706364270245,
+          1.4077098169968274,
+          0.1572421649756429,
+          0.20881889023070901,
+          2.0832885727661523
+        ],
+        "validation_candidates": [
+          {
+            "multiplier": 0.002,
+            "mse": 8.816687629699757e-08,
+            "updates": 34631
+          },
+          {
+            "multiplier": 0.005,
+            "mse": 5.23893180277061e-07,
+            "updates": 13856
+          },
+          {
+            "multiplier": 0.01,
+            "mse": 2.1763981884767866e-06,
+            "updates": 6929
+          },
+          {
+            "multiplier": 0.02,
+            "mse": 8.818455057720182e-06,
+            "updates": 3469
+          },
+          {
+            "multiplier": 0.05,
+            "mse": 5.619961170695545e-05,
+            "updates": 1388
+          },
+          {
+            "multiplier": 0.1,
+            "mse": 0.000227650395623564,
+            "updates": 697
+          },
+          {
+            "multiplier": 0.2,
+            "mse": 0.0009175055448187129,
+            "updates": 350
+          }
+        ],
+        "chosen_multiplier": 0.05,
+        "same_rates_used_by_all_test_methods": true,
+        "new_test_trajectories_not_new_processes": true,
+        "update_counts_are_not_wall_clock_speedup": true
+      }
+    },
+    {
+      "seed": 17,
+      "elapsed_seconds": 0.0928021660001832,
+      "metrics": {
+        "asynchronous_mse": 4.271275765425733e-05,
+        "fitted_dense_mse": 1.251643958189631e-06,
+        "uniform_clock_mse": 2.8585251834218563e-05,
+        "extra_mse_vs_fitted_dense": 4.444718827897567e-05,
+        "asynchronous_updates": 1181,
+        "dense_updates": 5400,
+        "uniform_clock_updates": 1170,
+        "dense_to_async_update_ratio": 4.5723962743437765,
+        "rate_relative_mae": 0.00712185214542524
+      },
+      "details": {
+        "true_rates": [
+          1.8641592884464615,
+          0.1154559543450165,
+          0.5795377272780191,
+          0.26800926078659565,
+          0.1437874141721109,
+          0.28806095614053256
+        ],
+        "learned_rates": [
+          1.8650014645713746,
+          0.11681037986440486,
+          0.5744506553699977,
+          0.26745422929527063,
+          0.14588225097235014,
+          0.2895388533685982
+        ],
+        "validation_candidates": [
+          {
+            "multiplier": 0.002,
+            "mse": 1.1432976335680888e-07,
+            "updates": 16302
+          },
+          {
+            "multiplier": 0.005,
+            "mse": 6.828544289830865e-07,
+            "updates": 6521
+          },
+          {
+            "multiplier": 0.01,
+            "mse": 2.7678971986574496e-06,
+            "updates": 3264
+          },
+          {
+            "multiplier": 0.02,
+            "mse": 1.1248519647560487e-05,
+            "updates": 1637
+          },
+          {
+            "multiplier": 0.05,
+            "mse": 7.287557997770505e-05,
+            "updates": 657
+          },
+          {
+            "multiplier": 0.1,
+            "mse": 0.0002830368696821497,
+            "updates": 330
+          },
+          {
+            "multiplier": 0.2,
+            "mse": 0.0010976854204935206,
+            "updates": 170
+          }
+        ],
+        "chosen_multiplier": 0.05,
+        "same_rates_used_by_all_test_methods": true,
+        "new_test_trajectories_not_new_processes": true,
+        "update_counts_are_not_wall_clock_speedup": true
+      }
+    },
+    {
+      "seed": 29,
+      "elapsed_seconds": 0.06191045800369466,
+      "metrics": {
+        "asynchronous_mse": 8.57182766372748e-05,
+        "fitted_dense_mse": 5.109980253639047e-05,
+        "uniform_clock_mse": 6.761931468987522e-05,
+        "extra_mse_vs_fitted_dense": 1.6228247977132888e-05,
+        "asynchronous_updates": 1237,
+        "dense_updates": 5400,
+        "uniform_clock_updates": 1224,
+        "dense_to_async_update_ratio": 4.365400161681487,
+        "rate_relative_mae": 0.030718350014230983
+      },
+      "details": {
+        "true_rates": [
+          0.07354108547528444,
+          0.4701909876808686,
+          0.4955361511264699,
+          0.17639166501575054,
+          0.10147193056558665,
+          0.06527705141458964
+        ],
+        "learned_rates": [
+          0.0691514873104139,
+          0.4686847629856341,
+          0.49295744203613584,
+          0.1733852590933279,
+          0.09557598551666897,
+          0.06795769355142457
+        ],
+        "validation_candidates": [
+          {
+            "multiplier": 0.002,
+            "mse": 1.9103482468811277e-07,
+            "updates": 6844
+          },
+          {
+            "multiplier": 0.005,
+            "mse": 1.2153753984900991e-06,
+            "updates": 2740
+          },
+          {
+            "multiplier": 0.01,
+            "mse": 4.871836547556438e-06,
+            "updates": 1375
+          },
+          {
+            "multiplier": 0.02,
+            "mse": 1.8835804714222377e-05,
+            "updates": 689
+          },
+          {
+            "multiplier": 0.05,
+            "mse": 0.00011352262096022697,
+            "updates": 278
+          },
+          {
+            "multiplier": 0.1,
+            "mse": 0.00041835909457667433,
+            "updates": 142
+          },
+          {
+            "multiplier": 0.2,
+            "mse": 0.001587588265483784,
+            "updates": 74
+          }
+        ],
+        "chosen_multiplier": 0.02,
+        "same_rates_used_by_all_test_methods": true,
+        "new_test_trajectories_not_new_processes": true,
+        "update_counts_are_not_wall_clock_speedup": true
+      }
+    },
+    {
+      "seed": 43,
+      "elapsed_seconds": 0.09761733399500372,
+      "metrics": {
+        "asynchronous_mse": 0.00012437490123434747,
+        "fitted_dense_mse": 4.785371672306417e-05,
+        "uniform_clock_mse": 9.26098951131693e-05,
+        "extra_mse_vs_fitted_dense": 8.553491269669329e-05,
+        "asynchronous_updates": 1304,
+        "dense_updates": 5400,
+        "uniform_clock_updates": 1290,
+        "dense_to_async_update_ratio": 4.141104294478527,
+        "rate_relative_mae": 0.02094739371302311
+      },
+      "details": {
+        "true_rates": [
+          0.851250682417029,
+          0.0716893808449449,
+          0.06509113346840137,
+          1.8202491777729837,
+          0.65312606893931,
+          0.1496104709714048
+        ],
+        "learned_rates": [
+          0.853649077654501,
+          0.07101759736167457,
+          0.06315701394525237,
+          1.8152642286891787,
+          0.6432659482722585,
+          0.15947678336933763
+        ],
+        "validation_candidates": [
+          {
+            "multiplier": 0.002,
+            "mse": 1.4114366788489537e-07,
+            "updates": 18036
+          },
+          {
+            "multiplier": 0.005,
+            "mse": 8.676577821521461e-07,
+            "updates": 7217
+          },
+          {
+            "multiplier": 0.01,
+            "mse": 3.538470147132274e-06,
+            "updates": 3609
+          },
+          {
+            "multiplier": 0.02,
+            "mse": 1.406100863721218e-05,
+            "updates": 1804
+          },
+          {
+            "multiplier": 0.05,
+            "mse": 8.430532339873975e-05,
+            "updates": 728
+          },
+          {
+            "multiplier": 0.1,
+            "mse": 0.00031517073920845284,
+            "updates": 366
+          },
+          {
+            "multiplier": 0.2,
+            "mse": 0.0011863744500755342,
+            "updates": 182
+          }
+        ],
+        "chosen_multiplier": 0.05,
+        "same_rates_used_by_all_test_methods": true,
+        "new_test_trajectories_not_new_processes": true,
+        "update_counts_are_not_wall_clock_speedup": true
+      }
+    },
+    {
+      "seed": 71,
+      "elapsed_seconds": 0.09158416600257624,
+      "metrics": {
+        "asynchronous_mse": 2.3369002404649565e-05,
+        "fitted_dense_mse": 9.835512628989864e-06,
+        "uniform_clock_mse": 1.1579169622528036e-05,
+        "extra_mse_vs_fitted_dense": 8.601272686754876e-06,
+        "asynchronous_updates": 2724,
+        "dense_updates": 5400,
+        "uniform_clock_updates": 2712,
+        "dense_to_async_update_ratio": 1.9823788546255507,
+        "rate_relative_mae": 0.016235684273712858
+      },
+      "details": {
+        "true_rates": [
+          0.16813522879158765,
+          0.512555549126198,
+          1.3243116344414774,
+          0.7926591384049232,
+          0.1376267242321263,
+          0.07227310784068412
+        ],
+        "learned_rates": [
+          0.16220634877767076,
+          0.5138688845268822,
+          1.3322557455959105,
+          0.8011441959156578,
+          0.13859433222956083,
+          0.06968173241702737
+        ],
+        "validation_candidates": [
+          {
+            "multiplier": 0.002,
+            "mse": 1.7200914735087127e-07,
+            "updates": 15096
+          },
+          {
+            "multiplier": 0.005,
+            "mse": 1.0973183547669277e-06,
+            "updates": 6040
+          },
+          {
+            "multiplier": 0.01,
+            "mse": 4.40445527678308e-06,
+            "updates": 3024
+          },
+          {
+            "multiplier": 0.02,
+            "mse": 1.7403724819363308e-05,
+            "updates": 1516
+          },
+          {
+            "multiplier": 0.05,
+            "mse": 0.00010804450075806994,
+            "updates": 610
+          },
+          {
+            "multiplier": 0.1,
+            "mse": 0.00041406444555398337,
+            "updates": 309
+          },
+          {
+            "multiplier": 0.2,
+            "mse": 0.0016163824375609909,
+            "updates": 157
+          }
+        ],
+        "chosen_multiplier": 0.02,
+        "same_rates_used_by_all_test_methods": true,
+        "new_test_trajectories_not_new_processes": true,
+        "update_counts_are_not_wall_clock_speedup": true
+      }
+    }
+  ],
+  "summary": {
+    "asynchronous_mse": {
+      "mean": 6.214285412250199e-05,
+      "std": 4.204617359582685e-05
+    },
+    "fitted_dense_mse": {
+      "mean": 2.62540487541513e-05,
+      "std": 2.2381862741182976e-05
+    },
+    "uniform_clock_mse": {
+      "mean": 4.7750092064732304e-05,
+      "std": 3.229182581728882e-05
+    },
+    "extra_mse_vs_fitted_dense": {
+      "mean": 3.858289675698088e-05,
+      "std": 3.0156841069005502e-05
+    },
+    "asynchronous_updates": {
+      "mean": 1789.2,
+      "std": 756.5280563204514
+    },
+    "dense_updates": {
+      "mean": 5400.0,
+      "std": 0.0
+    },
+    "uniform_clock_updates": {
+      "mean": 1776.0,
+      "std": 755.8928495494583
+    },
+    "dense_to_async_update_ratio": {
+      "mean": 3.444255917025868,
+      "std": 1.264239183503075
+    },
+    "rate_relative_mae": {
+      "mean": 0.01831767317498486,
+      "std": 0.008565116246263218
+    }
+  },
+  "scope": "Synthetic proof of mechanism; no biological or ASI validation."
+}

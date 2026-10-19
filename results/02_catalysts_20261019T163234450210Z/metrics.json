@@ -1,0 +1,540 @@
+{
+  "experiment": "02_catalysts",
+  "started_utc": "2026-10-19T16:32:34.450210+00:00",
+  "finished_utc": "2026-10-19T16:32:34.569453+00:00",
+  "source_commit": "61390eed7d13649520db37d796d8766cfe60fc91",
+  "source_tree_dirty": true,
+  "source_files_sha256": {
+    "experiments/01_development.py": "b03f0e898a5aa5efcb79c1eb691242d343f415d5d4b64cf97200e7bcca9bfbc4",
+    "experiments/02_catalysts.py": "12f01cc964a10d11f0b955c67c292d790e83cbe90d2ef4900244b5164e6a189d",
+    "experiments/03_symbiosis.py": "740e0b9097c301ff8e45666ae83987cb0c56124c236f79d4eff822828f6459ad",
+    "experiments/04_repair.py": "3161c1b6fb9ec9f3095914fa9552e4857855710ad263c12ea76753e2eb1cc3f0",
+    "experiments/05_immune_memory.py": "40d057eb8fde5b20a1a31b90bfb7887c26b3d0765643b178374668582e355db8",
+    "experiments/06_stable_regimes.py": "9241cc7ad236bfdd4f8f84e9adc16b6c7d4c531005bdc75b5e59decdbd7c42c2",
+    "experiments/07_clocks.py": "546bb75c13c51b3c0917219fa4b79aa3a15d5c2ba47829f8726057e25253dc24",
+    "lab.py": "5c7c8f4d0856632c03539593f27dc887a9abfde7058cefd50607a14f44ae2e8e",
+    "run.py": "d83f6583c97841d757e14d58d943e3170174652c99a6952dc370f7eb18688f5c",
+    "summarize.py": "d5ad02730dc68e1a9152e8b0472e31e9987fcca392be97aac89242a77d129d8b",
+    "tests/test_catalysts.py": "cc8dbcd674d379665ea7b4d46aa08a525a092126778fab3f5976299c02261279",
+    "tests/test_clocks.py": "4d65ee78bf1aef4c09c1a4b57fd01b5109d2b6e2a7fd360adf150dc8abd153a3",
+    "tests/test_development.py": "d88c8d7587ece06e6a5972cb26c17448aadaf33c2b7f30a23c495238ca97b2d6",
+    "tests/test_immune.py": "b7be78465b17a472244976cb2cb2d3b5ddb92597c53167c55e083f10ab5727cf",
+    "tests/test_lab.py": "0667a9e12ef5a28737a1ead73aeaea56dd8c0cf34c59ef2f38b588b35ff545df",
+    "tests/test_regimes.py": "90083197e288d7e31a61e9c7106df069b8776ad08cfb9724e88a1a9102717e0e",
+    "tests/test_repair.py": "3f8aa740f13fbcc5655a50980515579258454c0e1536c41354462d8b8c4ca66a",
+    "tests/test_symbiosis.py": "d625bd6f47e9546905c61a400c5fb7e3cf64d74c1c5e10fdefe5d3cc068b2115"
+  },
+  "python": "3.13.5",
+  "numpy": "2.4.4",
+  "platform": "macOS-26.5.1-arm64-arm-64bit-Mach-O",
+  "rows": [
+    {
+      "seed": 7,
+      "elapsed_seconds": 0.007171707999077626,
+      "metrics": {
+        "catalyst_mse": 3.4234419733056666e-05,
+        "linear_mse": 0.010058411559508748,
+        "full_chemistry_mse": 4.640343514457688e-05,
+        "nonzero_catalysts": 6,
+        "planted_rule_f1": 0.9090909090909091
+      },
+      "details": {
+        "learned_rules": {
+          "background": 0.11635559675773398,
+          "positive(a-b)": 0.35130044544471545,
+          "a*b/(1+c)": 0.7573375968693153,
+          "consume_c": 0.28139699679784846,
+          "a*c": 0.0,
+          "a": 0.6504863177443746,
+          "b*c": 0.004649009027361221
+        },
+        "planted_rules": {
+          "background": 0.11802325871783613,
+          "a": 0.6672769167349072,
+          "consume_c": 0.28409098901443025,
+          "a*b/(1+c)": 0.7232098436457496,
+          "positive(a-b)": 0.33084274725069546
+        },
+        "selection_trace": [
+          {
+            "active_rules": [
+              0
+            ],
+            "validation_mse": 0.07844611811700704
+          },
+          {
+            "active_rules": [
+              0,
+              8
+            ],
+            "validation_mse": 0.030114355502948706
+          },
+          {
+            "active_rules": [
+              0,
+              8,
+              5
+            ],
+            "validation_mse": 0.004536108537101082
+          },
+          {
+            "active_rules": [
+              0,
+              8,
+              5,
+              3
+            ],
+            "validation_mse": 0.0014395527822405423
+          },
+          {
+            "active_rules": [
+              0,
+              8,
+              5,
+              3,
+              6
+            ],
+            "validation_mse": 0.001062001787186671
+          },
+          {
+            "active_rules": [
+              0,
+              8,
+              5,
+              3,
+              6,
+              1
+            ],
+            "validation_mse": 2.583735320687509e-06
+          },
+          {
+            "active_rules": [
+              0,
+              8,
+              5,
+              3,
+              6,
+              1,
+              7
+            ],
+            "validation_mse": 2.3784726616827073e-06
+          }
+        ],
+        "train_constraint": "a+b < 1.1",
+        "test_constraint": "a+b > 1.5",
+        "dictionary_contains_generating_rules": true
+      }
+    },
+    {
+      "seed": 17,
+      "elapsed_seconds": 0.0014632079983130097,
+      "metrics": {
+        "catalyst_mse": 9.830979492518556e-06,
+        "linear_mse": 0.01774739314189585,
+        "full_chemistry_mse": 0.00014349276034420386,
+        "nonzero_catalysts": 7,
+        "planted_rule_f1": 0.8333333333333334
+      },
+      "details": {
+        "learned_rules": {
+          "background": 0.11105582272973757,
+          "a_squared": 0.0007272205652268568,
+          "consume_c": 0.29538851421987433,
+          "a*b/(1+c)": 0.8608816981087969,
+          "positive(a-b)": 0.3661978517865156,
+          "a*c": 0.007323485700062067,
+          "a": 0.5620824160410691
+        },
+        "planted_rules": {
+          "background": 0.11075749052335337,
+          "a": 0.5539605808886976,
+          "consume_c": 0.2916399028699981,
+          "a*b/(1+c)": 0.8808948625840384,
+          "positive(a-b)": 0.37468558274066444
+        },
+        "selection_trace": [
+          {
+            "active_rules": [
+              0
+            ],
+            "validation_mse": 0.06217792721519606
+          },
+          {
+            "active_rules": [
+              0,
+              9
+            ],
+            "validation_mse": 0.009969809089063694
+          },
+          {
+            "active_rules": [
+              0,
+              9,
+              3
+            ],
+            "validation_mse": 0.004384661491726969
+          },
+          {
+            "active_rules": [
+              0,
+              9,
+              3,
+              5
+            ],
+            "validation_mse": 0.002988606814921473
+          },
+          {
+            "active_rules": [
+              0,
+              9,
+              3,
+              5,
+              8
+            ],
+            "validation_mse": 0.0007764892408043255
+          },
+          {
+            "active_rules": [
+              0,
+              9,
+              3,
+              5,
+              8,
+              6
+            ],
+            "validation_mse": 0.0006879502236291824
+          },
+          {
+            "active_rules": [
+              0,
+              9,
+              3,
+              5,
+              8,
+              6,
+              1
+            ],
+            "validation_mse": 1.2191492109467888e-06
+          }
+        ],
+        "train_constraint": "a+b < 1.1",
+        "test_constraint": "a+b > 1.5",
+        "dictionary_contains_generating_rules": true
+      }
+    },
+    {
+      "seed": 29,
+      "elapsed_seconds": 0.0012811250053346157,
+      "metrics": {
+        "catalyst_mse": 5.8064562791600945e-05,
+        "linear_mse": 0.021574388182306628,
+        "full_chemistry_mse": 7.707904288290904e-05,
+        "nonzero_catalysts": 7,
+        "planted_rule_f1": 0.8333333333333334
+      },
+      "details": {
+        "learned_rules": {
+          "background": 0.10616163692841754,
+          "a_squared": 0.006043045473560652,
+          "consume_c": 0.28448410161639043,
+          "a*b/(1+c)": 0.9025524957106404,
+          "positive(a-b)": 0.40996232135872146,
+          "a*c": 0.0016606374703495173,
+          "a": 0.6957053445853444
+        },
+        "planted_rules": {
+          "background": 0.10773510636178518,
+          "a": 0.6951073462067392,
+          "consume_c": 0.28729672812742113,
+          "a*b/(1+c)": 0.9262180420885034,
+          "positive(a-b)": 0.4110223425130497
+        },
+        "selection_trace": [
+          {
+            "active_rules": [
+              0
+            ],
+            "validation_mse": 0.08868580526312891
+          },
+          {
+            "active_rules": [
+              0,
+              9
+            ],
+            "validation_mse": 0.014475999632717616
+          },
+          {
+            "active_rules": [
+              0,
+              9,
+              3
+            ],
+            "validation_mse": 0.004718725968315529
+          },
+          {
+            "active_rules": [
+              0,
+              9,
+              3,
+              5
+            ],
+            "validation_mse": 0.0038717655444998017
+          },
+          {
+            "active_rules": [
+              0,
+              9,
+              3,
+              5,
+              8
+            ],
+            "validation_mse": 0.00113101346638771
+          },
+          {
+            "active_rules": [
+              0,
+              9,
+              3,
+              5,
+              8,
+              6
+            ],
+            "validation_mse": 0.0009606072698366124
+          },
+          {
+            "active_rules": [
+              0,
+              9,
+              3,
+              5,
+              8,
+              6,
+              1
+            ],
+            "validation_mse": 4.821283633332667e-06
+          }
+        ],
+        "train_constraint": "a+b < 1.1",
+        "test_constraint": "a+b > 1.5",
+        "dictionary_contains_generating_rules": true
+      }
+    },
+    {
+      "seed": 43,
+      "elapsed_seconds": 0.0012872080042143352,
+      "metrics": {
+        "catalyst_mse": 1.8568910055917214e-05,
+        "linear_mse": 0.017174086227424747,
+        "full_chemistry_mse": 1.2412587715137124e-05,
+        "nonzero_catalysts": 6,
+        "planted_rule_f1": 0.9090909090909091
+      },
+      "details": {
+        "learned_rules": {
+          "background": 0.11072082291325298,
+          "a_squared": 0.002890148526386891,
+          "consume_c": 0.27642002891760836,
+          "a*b/(1+c)": 0.833527158681384,
+          "positive(a-b)": 0.3503677677902067,
+          "a*c": 0.0,
+          "a": 0.5043274653495466
+        },
+        "planted_rules": {
+          "background": 0.111566211593777,
+          "a": 0.49813535418304505,
+          "consume_c": 0.27501656544006786,
+          "a*b/(1+c)": 0.8345650702148826,
+          "positive(a-b)": 0.3644274389048088
+        },
+        "selection_trace": [
+          {
+            "active_rules": [
+              0
+            ],
+            "validation_mse": 0.06234843506618874
+          },
+          {
+            "active_rules": [
+              0,
+              9
+            ],
+            "validation_mse": 0.012077497447592171
+          },
+          {
+            "active_rules": [
+              0,
+              9,
+              3
+            ],
+            "validation_mse": 0.0038272474840517984
+          },
+          {
+            "active_rules": [
+              0,
+              9,
+              3,
+              5
+            ],
+            "validation_mse": 0.0022806834856337697
+          },
+          {
+            "active_rules": [
+              0,
+              9,
+              3,
+              5,
+              8
+            ],
+            "validation_mse": 0.0006104147589667664
+          },
+          {
+            "active_rules": [
+              0,
+              9,
+              3,
+              5,
+              8,
+              6
+            ],
+            "validation_mse": 0.0004617603789089873
+          },
+          {
+            "active_rules": [
+              0,
+              9,
+              3,
+              5,
+              8,
+              6,
+              1
+            ],
+            "validation_mse": 4.614840964284884e-06
+          }
+        ],
+        "train_constraint": "a+b < 1.1",
+        "test_constraint": "a+b > 1.5",
+        "dictionary_contains_generating_rules": true
+      }
+    },
+    {
+      "seed": 71,
+      "elapsed_seconds": 0.0012141660045017488,
+      "metrics": {
+        "catalyst_mse": 7.77379975904217e-05,
+        "linear_mse": 0.01268503830510393,
+        "full_chemistry_mse": 9.614397261298348e-05,
+        "nonzero_catalysts": 5,
+        "planted_rule_f1": 1.0
+      },
+      "details": {
+        "learned_rules": {
+          "background": 0.11101177151658435,
+          "a_squared": 0.0,
+          "consume_c": 0.33842237917164397,
+          "a*b/(1+c)": 0.9236136110907865,
+          "positive(a-b)": 0.45465007398630514,
+          "a*c": 0.0,
+          "a": 0.676709735084926
+        },
+        "planted_rules": {
+          "background": 0.11421359936100597,
+          "a": 0.6833843253102249,
+          "consume_c": 0.34036618476930164,
+          "a*b/(1+c)": 0.890958553842045,
+          "positive(a-b)": 0.4475973493358414
+        },
+        "selection_trace": [
+          {
+            "active_rules": [
+              0
+            ],
+            "validation_mse": 0.07925687626135126
+          },
+          {
+            "active_rules": [
+              0,
+              9
+            ],
+            "validation_mse": 0.01328636616831328
+          },
+          {
+            "active_rules": [
+              0,
+              9,
+              3
+            ],
+            "validation_mse": 0.004552189220623837
+          },
+          {
+            "active_rules": [
+              0,
+              9,
+              3,
+              5
+            ],
+            "validation_mse": 0.004091650202466611
+          },
+          {
+            "active_rules": [
+              0,
+              9,
+              3,
+              5,
+              8
+            ],
+            "validation_mse": 0.0011446872434043376
+          },
+          {
+            "active_rules": [
+              0,
+              9,
+              3,
+              5,
+              8,
+              6
+            ],
+            "validation_mse": 0.0009344477159377845
+          },
+          {
+            "active_rules": [
+              0,
+              9,
+              3,
+              5,
+              8,
+              6,
+              1
+            ],
+            "validation_mse": 2.343501441012259e-06
+          }
+        ],
+        "train_constraint": "a+b < 1.1",
+        "test_constraint": "a+b > 1.5",
+        "dictionary_contains_generating_rules": true
+      }
+    }
+  ],
+  "summary": {
+    "catalyst_mse": {
+      "mean": 3.968737393270301e-05,
+      "std": 2.8074452559593075e-05
+    },
+    "linear_mse": {
+      "mean": 0.01584786348324798,
+      "std": 0.004518887625980902
+    },
+    "full_chemistry_mse": {
+      "mean": 7.510635973996208e-05,
+      "std": 4.9692905310543366e-05
+    },
+    "nonzero_catalysts": {
+      "mean": 6.2,
+      "std": 0.8366600265340756
+    },
+    "planted_rule_f1": {
+      "mean": 0.8969696969696969,
+      "std": 0.06893523130955953
+    }
+  },
+  "scope": "Synthetic proof of mechanism; no biological or ASI validation."
+}

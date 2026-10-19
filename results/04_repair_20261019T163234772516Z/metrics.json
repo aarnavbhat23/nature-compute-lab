@@ -1,0 +1,341 @@
+{
+  "experiment": "04_repair",
+  "started_utc": "2026-10-19T16:32:34.772516+00:00",
+  "finished_utc": "2026-10-19T16:32:34.878158+00:00",
+  "source_commit": "61390eed7d13649520db37d796d8766cfe60fc91",
+  "source_tree_dirty": true,
+  "source_files_sha256": {
+    "experiments/01_development.py": "b03f0e898a5aa5efcb79c1eb691242d343f415d5d4b64cf97200e7bcca9bfbc4",
+    "experiments/02_catalysts.py": "12f01cc964a10d11f0b955c67c292d790e83cbe90d2ef4900244b5164e6a189d",
+    "experiments/03_symbiosis.py": "740e0b9097c301ff8e45666ae83987cb0c56124c236f79d4eff822828f6459ad",
+    "experiments/04_repair.py": "3161c1b6fb9ec9f3095914fa9552e4857855710ad263c12ea76753e2eb1cc3f0",
+    "experiments/05_immune_memory.py": "40d057eb8fde5b20a1a31b90bfb7887c26b3d0765643b178374668582e355db8",
+    "experiments/06_stable_regimes.py": "9241cc7ad236bfdd4f8f84e9adc16b6c7d4c531005bdc75b5e59decdbd7c42c2",
+    "experiments/07_clocks.py": "546bb75c13c51b3c0917219fa4b79aa3a15d5c2ba47829f8726057e25253dc24",
+    "lab.py": "5c7c8f4d0856632c03539593f27dc887a9abfde7058cefd50607a14f44ae2e8e",
+    "run.py": "d83f6583c97841d757e14d58d943e3170174652c99a6952dc370f7eb18688f5c",
+    "summarize.py": "d5ad02730dc68e1a9152e8b0472e31e9987fcca392be97aac89242a77d129d8b",
+    "tests/test_catalysts.py": "cc8dbcd674d379665ea7b4d46aa08a525a092126778fab3f5976299c02261279",
+    "tests/test_clocks.py": "4d65ee78bf1aef4c09c1a4b57fd01b5109d2b6e2a7fd360adf150dc8abd153a3",
+    "tests/test_development.py": "d88c8d7587ece06e6a5972cb26c17448aadaf33c2b7f30a23c495238ca97b2d6",
+    "tests/test_immune.py": "b7be78465b17a472244976cb2cb2d3b5ddb92597c53167c55e083f10ab5727cf",
+    "tests/test_lab.py": "0667a9e12ef5a28737a1ead73aeaea56dd8c0cf34c59ef2f38b588b35ff545df",
+    "tests/test_regimes.py": "90083197e288d7e31a61e9c7106df069b8776ad08cfb9724e88a1a9102717e0e",
+    "tests/test_repair.py": "3f8aa740f13fbcc5655a50980515579258454c0e1536c41354462d8b8c4ca66a",
+    "tests/test_symbiosis.py": "d625bd6f47e9546905c61a400c5fb7e3cf64d74c1c5e10fdefe5d3cc068b2115"
+  },
+  "python": "3.13.5",
+  "numpy": "2.4.4",
+  "platform": "macOS-26.5.1-arm64-arm-64bit-Mach-O",
+  "rows": [
+    {
+      "seed": 7,
+      "elapsed_seconds": 0.0025711249982123263,
+      "metrics": {
+        "sparse_repair_mse": 0.0004418456960875334,
+        "frozen_mse": 0.06535124789637228,
+        "full_refit_mse": 0.011758637294973418,
+        "regularized_full_patch_mse": 0.005736903899595815,
+        "patch_terms": 2,
+        "changed_interaction_selected": 1.0
+      },
+      "details": {
+        "patch": {
+          "constant": -0.0030196909125053406,
+          "a*b": 0.6694806512444733
+        },
+        "trace": [
+          {
+            "terms": [
+              0
+            ],
+            "validation_mse": 0.09154942609300494
+          },
+          {
+            "terms": [
+              0,
+              4
+            ],
+            "validation_mse": 0.005744725169672167
+          },
+          {
+            "terms": [
+              0,
+              4,
+              3
+            ],
+            "validation_mse": 0.008359635341050593
+          },
+          {
+            "terms": [
+              0,
+              4,
+              3,
+              2
+            ],
+            "validation_mse": 0.013444400752550411
+          }
+        ],
+        "adaptation_fit_labels": 12,
+        "adaptation_validation_labels": 12,
+        "full_refit_penalty": 0.001,
+        "full_patch_penalty": 0.1,
+        "changed_term": "a*b",
+        "all_adapting_controls_receive_same_examples": true
+      }
+    },
+    {
+      "seed": 17,
+      "elapsed_seconds": 0.001172791002318263,
+      "metrics": {
+        "sparse_repair_mse": 0.0007614456044077048,
+        "frozen_mse": 0.04947880564381882,
+        "full_refit_mse": 0.0011917922003113416,
+        "regularized_full_patch_mse": 0.005112413387962528,
+        "patch_terms": 3,
+        "changed_interaction_selected": 1.0
+      },
+      "details": {
+        "patch": {
+          "constant": -0.019489042380861465,
+          "a*b": 0.6414483047016892,
+          "b*c": -0.024185407268776576
+        },
+        "trace": [
+          {
+            "terms": [
+              0
+            ],
+            "validation_mse": 0.017757703591602537
+          },
+          {
+            "terms": [
+              0,
+              4
+            ],
+            "validation_mse": 0.002788271186430283
+          },
+          {
+            "terms": [
+              0,
+              4,
+              5
+            ],
+            "validation_mse": 0.0027000359676689644
+          },
+          {
+            "terms": [
+              0,
+              4,
+              5,
+              2
+            ],
+            "validation_mse": 0.0035322401634646414
+          }
+        ],
+        "adaptation_fit_labels": 12,
+        "adaptation_validation_labels": 12,
+        "full_refit_penalty": 0.1,
+        "full_patch_penalty": 1.0,
+        "changed_term": "a*b",
+        "all_adapting_controls_receive_same_examples": true
+      }
+    },
+    {
+      "seed": 29,
+      "elapsed_seconds": 0.0011409579965402372,
+      "metrics": {
+        "sparse_repair_mse": 0.00025521377443732147,
+        "frozen_mse": 0.06934439355254397,
+        "full_refit_mse": 0.0150484076701637,
+        "regularized_full_patch_mse": 0.004397987929054837,
+        "patch_terms": 3,
+        "changed_interaction_selected": 1.0
+      },
+      "details": {
+        "patch": {
+          "constant": -0.011078120823455412,
+          "b": 0.010997245562668845,
+          "a*b": 0.7727084617766112
+        },
+        "trace": [
+          {
+            "terms": [
+              0
+            ],
+            "validation_mse": 0.08589739810142032
+          },
+          {
+            "terms": [
+              0,
+              2
+            ],
+            "validation_mse": 0.12019716467692522
+          },
+          {
+            "terms": [
+              0,
+              2,
+              4
+            ],
+            "validation_mse": 0.0028208481187116017
+          },
+          {
+            "terms": [
+              0,
+              2,
+              4,
+              3
+            ],
+            "validation_mse": 0.00321014785917706
+          }
+        ],
+        "adaptation_fit_labels": 12,
+        "adaptation_validation_labels": 12,
+        "full_refit_penalty": 0.1,
+        "full_patch_penalty": 0.1,
+        "changed_term": "a*b",
+        "all_adapting_controls_receive_same_examples": true
+      }
+    },
+    {
+      "seed": 43,
+      "elapsed_seconds": 0.0011341659992467612,
+      "metrics": {
+        "sparse_repair_mse": 3.109270370957776e-05,
+        "frozen_mse": 0.07043122980993397,
+        "full_refit_mse": 0.003987491029565129,
+        "regularized_full_patch_mse": 0.004525934022103191,
+        "patch_terms": 2,
+        "changed_interaction_selected": 1.0
+      },
+      "details": {
+        "patch": {
+          "constant": -0.005013458301400681,
+          "a*b": 0.794955904673226
+        },
+        "trace": [
+          {
+            "terms": [
+              0
+            ],
+            "validation_mse": 0.049863863835728904
+          },
+          {
+            "terms": [
+              0,
+              4
+            ],
+            "validation_mse": 0.0019975041685765713
+          },
+          {
+            "terms": [
+              0,
+              4,
+              6
+            ],
+            "validation_mse": 0.002493345619606803
+          },
+          {
+            "terms": [
+              0,
+              4,
+              6,
+              5
+            ],
+            "validation_mse": 0.0033804830902192224
+          }
+        ],
+        "adaptation_fit_labels": 12,
+        "adaptation_validation_labels": 12,
+        "full_refit_penalty": 0.1,
+        "full_patch_penalty": 0.1,
+        "changed_term": "a*b",
+        "all_adapting_controls_receive_same_examples": true
+      }
+    },
+    {
+      "seed": 71,
+      "elapsed_seconds": 0.001102708003600128,
+      "metrics": {
+        "sparse_repair_mse": 3.3625754572654906e-05,
+        "frozen_mse": 0.07768863492430177,
+        "full_refit_mse": 0.00998254615169158,
+        "regularized_full_patch_mse": 0.011408216456909948,
+        "patch_terms": 2,
+        "changed_interaction_selected": 1.0
+      },
+      "details": {
+        "patch": {
+          "constant": 0.001376338466385546,
+          "a*b": 0.8495950431019861
+        },
+        "trace": [
+          {
+            "terms": [
+              0
+            ],
+            "validation_mse": 0.14662954721190666
+          },
+          {
+            "terms": [
+              0,
+              4
+            ],
+            "validation_mse": 0.003280248319099252
+          },
+          {
+            "terms": [
+              0,
+              4,
+              3
+            ],
+            "validation_mse": 0.00494439551550966
+          },
+          {
+            "terms": [
+              0,
+              4,
+              3,
+              7
+            ],
+            "validation_mse": 0.008417684416710087
+          }
+        ],
+        "adaptation_fit_labels": 12,
+        "adaptation_validation_labels": 12,
+        "full_refit_penalty": 0.001,
+        "full_patch_penalty": 0.001,
+        "changed_term": "a*b",
+        "all_adapting_controls_receive_same_examples": true
+      }
+    }
+  ],
+  "summary": {
+    "sparse_repair_mse": {
+      "mean": 0.0003046447066429584,
+      "std": 0.0003074965688638317
+    },
+    "frozen_mse": {
+      "mean": 0.06645886236539415,
+      "std": 0.010485262528319819
+    },
+    "full_refit_mse": {
+      "mean": 0.008393774869341033,
+      "std": 0.005688025199630222
+    },
+    "regularized_full_patch_mse": {
+      "mean": 0.006236291139125263,
+      "std": 0.0029396420048710416
+    },
+    "patch_terms": {
+      "mean": 2.4,
+      "std": 0.5477225575051661
+    },
+    "changed_interaction_selected": {
+      "mean": 1.0,
+      "std": 0.0
+    }
+  },
+  "scope": "Synthetic proof of mechanism; no biological or ASI validation."
+}

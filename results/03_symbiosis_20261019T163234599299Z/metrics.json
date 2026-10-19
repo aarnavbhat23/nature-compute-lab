@@ -1,0 +1,550 @@
+{
+  "experiment": "03_symbiosis",
+  "started_utc": "2026-10-19T16:32:34.599299+00:00",
+  "finished_utc": "2026-10-19T16:32:34.736037+00:00",
+  "source_commit": "61390eed7d13649520db37d796d8766cfe60fc91",
+  "source_tree_dirty": true,
+  "source_files_sha256": {
+    "experiments/01_development.py": "b03f0e898a5aa5efcb79c1eb691242d343f415d5d4b64cf97200e7bcca9bfbc4",
+    "experiments/02_catalysts.py": "12f01cc964a10d11f0b955c67c292d790e83cbe90d2ef4900244b5164e6a189d",
+    "experiments/03_symbiosis.py": "740e0b9097c301ff8e45666ae83987cb0c56124c236f79d4eff822828f6459ad",
+    "experiments/04_repair.py": "3161c1b6fb9ec9f3095914fa9552e4857855710ad263c12ea76753e2eb1cc3f0",
+    "experiments/05_immune_memory.py": "40d057eb8fde5b20a1a31b90bfb7887c26b3d0765643b178374668582e355db8",
+    "experiments/06_stable_regimes.py": "9241cc7ad236bfdd4f8f84e9adc16b6c7d4c531005bdc75b5e59decdbd7c42c2",
+    "experiments/07_clocks.py": "546bb75c13c51b3c0917219fa4b79aa3a15d5c2ba47829f8726057e25253dc24",
+    "lab.py": "5c7c8f4d0856632c03539593f27dc887a9abfde7058cefd50607a14f44ae2e8e",
+    "run.py": "d83f6583c97841d757e14d58d943e3170174652c99a6952dc370f7eb18688f5c",
+    "summarize.py": "d5ad02730dc68e1a9152e8b0472e31e9987fcca392be97aac89242a77d129d8b",
+    "tests/test_catalysts.py": "cc8dbcd674d379665ea7b4d46aa08a525a092126778fab3f5976299c02261279",
+    "tests/test_clocks.py": "4d65ee78bf1aef4c09c1a4b57fd01b5109d2b6e2a7fd360adf150dc8abd153a3",
+    "tests/test_development.py": "d88c8d7587ece06e6a5972cb26c17448aadaf33c2b7f30a23c495238ca97b2d6",
+    "tests/test_immune.py": "b7be78465b17a472244976cb2cb2d3b5ddb92597c53167c55e083f10ab5727cf",
+    "tests/test_lab.py": "0667a9e12ef5a28737a1ead73aeaea56dd8c0cf34c59ef2f38b588b35ff545df",
+    "tests/test_regimes.py": "90083197e288d7e31a61e9c7106df069b8776ad08cfb9724e88a1a9102717e0e",
+    "tests/test_repair.py": "3f8aa740f13fbcc5655a50980515579258454c0e1536c41354462d8b8c4ca66a",
+    "tests/test_symbiosis.py": "d625bd6f47e9546905c61a400c5fb7e3cf64d74c1c5e10fdefe5d3cc068b2115"
+  },
+  "python": "3.13.5",
+  "numpy": "2.4.4",
+  "platform": "macOS-26.5.1-arm64-arm-64bit-Mach-O",
+  "rows": [
+    {
+      "seed": 7,
+      "elapsed_seconds": 0.0068572500022128224,
+      "metrics": {
+        "partnership_mse": 0.0004520149328154011,
+        "independent_modules_mse": 0.06993543564549354,
+        "fixed_interactions_mse": 0.0007618196338954814,
+        "retained_joins": 2,
+        "fixed_dictionary_terms": 15
+      },
+      "details": {
+        "operations": [
+          [
+            1,
+            2
+          ],
+          [
+            3,
+            3
+          ]
+        ],
+        "coefficients": [
+          0.0030718139430927056,
+          0.9944242522282107,
+          0.993455918267251,
+          0.671998943837817,
+          0.2695863815290861
+        ],
+        "selection_trace": [
+          {
+            "joins": [],
+            "validation_mse": 0.005721988577582676
+          },
+          {
+            "joins": [
+              [
+                1,
+                2
+              ]
+            ],
+            "validation_mse": 4.937225379217135e-05
+          },
+          {
+            "joins": [
+              [
+                1,
+                2
+              ],
+              [
+                3,
+                3
+              ]
+            ],
+            "validation_mse": 2.288639968287612e-05
+          },
+          {
+            "joins": [
+              [
+                1,
+                2
+              ],
+              [
+                3,
+                3
+              ],
+              [
+                2,
+                2
+              ]
+            ],
+            "validation_mse": 2.293467128885947e-05
+          },
+          {
+            "joins": [
+              [
+                1,
+                2
+              ],
+              [
+                3,
+                3
+              ],
+              [
+                2,
+                2
+              ],
+              [
+                5,
+                5
+              ]
+            ],
+            "validation_mse": 4.0303560024305314e-05
+          }
+        ],
+        "intermediate_training_labels_available_to_all_controls": true,
+        "train_constraint": "abs(x1*x2) < 0.35",
+        "test_constraint": "abs(x1),abs(x2) > 0.65"
+      }
+    },
+    {
+      "seed": 17,
+      "elapsed_seconds": 0.0030961250013206154,
+      "metrics": {
+        "partnership_mse": 9.64014125900441e-05,
+        "independent_modules_mse": 0.06904469981988555,
+        "fixed_interactions_mse": 0.0008376370046349735,
+        "retained_joins": 2,
+        "fixed_dictionary_terms": 15
+      },
+      "details": {
+        "operations": [
+          [
+            1,
+            2
+          ],
+          [
+            3,
+            3
+          ]
+        ],
+        "coefficients": [
+          0.001169286427510106,
+          0.9999923651534157,
+          0.9933250666910394,
+          0.6942352508797845,
+          0.4994828890749489
+        ],
+        "selection_trace": [
+          {
+            "joins": [],
+            "validation_mse": 0.0054838850247386235
+          },
+          {
+            "joins": [
+              [
+                1,
+                2
+              ]
+            ],
+            "validation_mse": 4.176653478132426e-05
+          },
+          {
+            "joins": [
+              [
+                1,
+                2
+              ],
+              [
+                3,
+                3
+              ]
+            ],
+            "validation_mse": 6.5487402737788014e-06
+          },
+          {
+            "joins": [
+              [
+                1,
+                2
+              ],
+              [
+                3,
+                3
+              ],
+              [
+                1,
+                1
+              ]
+            ],
+            "validation_mse": 6.650582403333593e-06
+          },
+          {
+            "joins": [
+              [
+                1,
+                2
+              ],
+              [
+                3,
+                3
+              ],
+              [
+                1,
+                1
+              ],
+              [
+                5,
+                5
+              ]
+            ],
+            "validation_mse": 9.004624365429103e-06
+          }
+        ],
+        "intermediate_training_labels_available_to_all_controls": true,
+        "train_constraint": "abs(x1*x2) < 0.35",
+        "test_constraint": "abs(x1),abs(x2) > 0.65"
+      }
+    },
+    {
+      "seed": 29,
+      "elapsed_seconds": 0.004397541997605003,
+      "metrics": {
+        "partnership_mse": 0.0003100761922250864,
+        "independent_modules_mse": 0.06627607542398531,
+        "fixed_interactions_mse": 0.000754213688041703,
+        "retained_joins": 2,
+        "fixed_dictionary_terms": 15
+      },
+      "details": {
+        "operations": [
+          [
+            1,
+            2
+          ],
+          [
+            3,
+            3
+          ]
+        ],
+        "coefficients": [
+          0.0014722749183692365,
+          1.0018220844592598,
+          0.9958689876531679,
+          0.6990461347758783,
+          0.5301323382561284
+        ],
+        "selection_trace": [
+          {
+            "joins": [],
+            "validation_mse": 0.004361103564842887
+          },
+          {
+            "joins": [
+              [
+                1,
+                2
+              ]
+            ],
+            "validation_mse": 2.5226226548425102e-05
+          },
+          {
+            "joins": [
+              [
+                1,
+                2
+              ],
+              [
+                3,
+                3
+              ]
+            ],
+            "validation_mse": 5.832916674273286e-06
+          },
+          {
+            "joins": [
+              [
+                1,
+                2
+              ],
+              [
+                3,
+                3
+              ],
+              [
+                2,
+                2
+              ]
+            ],
+            "validation_mse": 8.564606743684776e-06
+          },
+          {
+            "joins": [
+              [
+                1,
+                2
+              ],
+              [
+                3,
+                3
+              ],
+              [
+                2,
+                2
+              ],
+              [
+                1,
+                3
+              ]
+            ],
+            "validation_mse": 1.0732543144393651e-05
+          }
+        ],
+        "intermediate_training_labels_available_to_all_controls": true,
+        "train_constraint": "abs(x1*x2) < 0.35",
+        "test_constraint": "abs(x1),abs(x2) > 0.65"
+      }
+    },
+    {
+      "seed": 43,
+      "elapsed_seconds": 0.002680375000636559,
+      "metrics": {
+        "partnership_mse": 4.7530000737698525e-05,
+        "independent_modules_mse": 0.06931465480750638,
+        "fixed_interactions_mse": 0.0005682817268051775,
+        "retained_joins": 2,
+        "fixed_dictionary_terms": 15
+      },
+      "details": {
+        "operations": [
+          [
+            1,
+            2
+          ],
+          [
+            3,
+            3
+          ]
+        ],
+        "coefficients": [
+          -0.0017646688231606944,
+          0.9993540431889331,
+          1.0004114352130904,
+          0.712878740518632,
+          0.37133645137333693
+        ],
+        "selection_trace": [
+          {
+            "joins": [],
+            "validation_mse": 0.005113015964637411
+          },
+          {
+            "joins": [
+              [
+                1,
+                2
+              ]
+            ],
+            "validation_mse": 2.5739834269239655e-05
+          },
+          {
+            "joins": [
+              [
+                1,
+                2
+              ],
+              [
+                3,
+                3
+              ]
+            ],
+            "validation_mse": 7.81312772118347e-06
+          },
+          {
+            "joins": [
+              [
+                1,
+                2
+              ],
+              [
+                3,
+                3
+              ],
+              [
+                2,
+                3
+              ]
+            ],
+            "validation_mse": 1.1326784486017894e-05
+          },
+          {
+            "joins": [
+              [
+                1,
+                2
+              ],
+              [
+                3,
+                3
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                2,
+                5
+              ]
+            ],
+            "validation_mse": 1.4678805506257685e-05
+          }
+        ],
+        "intermediate_training_labels_available_to_all_controls": true,
+        "train_constraint": "abs(x1*x2) < 0.35",
+        "test_constraint": "abs(x1),abs(x2) > 0.65"
+      }
+    },
+    {
+      "seed": 71,
+      "elapsed_seconds": 0.0025395410048076883,
+      "metrics": {
+        "partnership_mse": 5.3809957326268625e-05,
+        "independent_modules_mse": 0.06352240109628347,
+        "fixed_interactions_mse": 0.0004595478375926288,
+        "retained_joins": 2,
+        "fixed_dictionary_terms": 15
+      },
+      "details": {
+        "operations": [
+          [
+            1,
+            2
+          ],
+          [
+            3,
+            3
+          ]
+        ],
+        "coefficients": [
+          -0.0021305786825767115,
+          1.0008286950302878,
+          0.9988502803998959,
+          0.7137074953712724,
+          0.4771056175591716
+        ],
+        "selection_trace": [
+          {
+            "joins": [],
+            "validation_mse": 0.004374864148658844
+          },
+          {
+            "joins": [
+              [
+                1,
+                2
+              ]
+            ],
+            "validation_mse": 3.8349221795018964e-05
+          },
+          {
+            "joins": [
+              [
+                1,
+                2
+              ],
+              [
+                3,
+                3
+              ]
+            ],
+            "validation_mse": 9.017146117793937e-06
+          },
+          {
+            "joins": [
+              [
+                1,
+                2
+              ],
+              [
+                3,
+                3
+              ],
+              [
+                2,
+                3
+              ]
+            ],
+            "validation_mse": 1.4329295342764941e-05
+          },
+          {
+            "joins": [
+              [
+                1,
+                2
+              ],
+              [
+                3,
+                3
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                1,
+                1
+              ]
+            ],
+            "validation_mse": 1.405553335750088e-05
+          }
+        ],
+        "intermediate_training_labels_available_to_all_controls": true,
+        "train_constraint": "abs(x1*x2) < 0.35",
+        "test_constraint": "abs(x1),abs(x2) > 0.65"
+      }
+    }
+  ],
+  "summary": {
+    "partnership_mse": {
+      "mean": 0.00019196649913889974,
+      "std": 0.00018073247172383736
+    },
+    "independent_modules_mse": {
+      "mean": 0.06761865335863085,
+      "std": 0.0026860429862694286
+    },
+    "fixed_interactions_mse": {
+      "mean": 0.0006762999781939929,
+      "std": 0.00015657524300054815
+    },
+    "retained_joins": {
+      "mean": 2.0,
+      "std": 0.0
+    },
+    "fixed_dictionary_terms": {
+      "mean": 15.0,
+      "std": 0.0
+    }
+  },
+  "scope": "Synthetic proof of mechanism; no biological or ASI validation."
+}
