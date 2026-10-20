@@ -32,4 +32,4 @@ In an eventual typed architecture, genuinely conserved measured pools use such a
 
 ## Next model-level test
 
-Before using this block to claim improved learning, train a complete rate learner and compare it with a conventional model given the same conservation information, including a properly constrained generic control. Evaluate closed and intentionally open systems separately. A zero conservation violation is guaranteed here and must not be represented as evidence that the model identified correct rates, predicts well, or is a new AI architecture.
+Before using this block to claim improved learning, train a complete rate learner and compare it with a conventional model given the same conservation information, including a properly constrained generic control. Evaluate closed and intentionally open systems separately. A zero conservation violation is guaranteed here and must not be represented as evidence that the model identified correct rates, predicts well, or is a new machine learning architecture.

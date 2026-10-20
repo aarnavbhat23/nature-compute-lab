@@ -91,4 +91,4 @@ The strongest next hypothesis is **measurement-limited structural repair over ph
 
 [ARCHITECTURE_DECISION.md](ARCHITECTURE_DECISION.md) gives the proposed computation, edit actions, next task, controls, and stopping gates. [BIOLOGICAL_RULES.md](BIOLOGICAL_RULES.md) separates biological evidence from engineering inference. [NOVELTY_AUDIT.md](NOVELTY_AUDIT.md) documents 13 close primary precedents: the ingredients are known, and the exact proposed joint contribution is not established as new.
 
-A [Claude Science review prompt](CLAUDE_SCIENCE_REVIEW.md) is prepared but has not been submitted. No external-model agreement is claimed. We can proceed with the bounded next experiment without that optional review. The present work supports an executable research direction, not a verified route to ASI.
+A [independent technical review prompt](TECHNICAL_REVIEW.md) is prepared but has not been submitted. No external-model agreement is claimed. We can proceed with the bounded next experiment without that optional review. The present work supports an executable research direction, not a verified route to ASI.

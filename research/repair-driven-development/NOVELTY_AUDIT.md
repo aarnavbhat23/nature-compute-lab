@@ -6,7 +6,7 @@
 
 ## Finding
 
-The current components do **not** establish a previously unknown category of AI. Learned reaction dynamics, fractional-occupancy regulation, regeneration, capacity expansion, constraint-preserving computation, and adaptation to changed systems all have substantial precedents.
+The current components do **not** establish a previously unknown category of machine learning. Learned reaction dynamics, fractional-occupancy regulation, regeneration, capacity expansion, constraint-preserving computation, and adaptation to changed systems all have substantial precedents.
 
 We can build an original research implementation and potentially make a publishable contribution. Its contribution must be a precisely different mechanism, guarantee, learning procedure, evaluation, or demonstrated capability. Calling compartments “cells” or a correction “regeneration” is insufficient. None of the current experiments establish ASI or general biological intelligence.
 

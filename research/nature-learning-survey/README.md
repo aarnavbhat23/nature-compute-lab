@@ -1,6 +1,6 @@
 # Searching for a different learning primitive
 
-Research date: October 15, 2026, America/Los_Angeles. Prepared with Codex assistance. This is a literature audit and research proposal, not a completed new architecture or a performance result.
+Research date: October 15, 2026, America/Los_Angeles. This is a literature audit and research proposal, not a completed new architecture or a performance result.
 
 ## Decision
 

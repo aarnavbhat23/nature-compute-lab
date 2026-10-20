@@ -1,1 +1,1 @@
-"""Independently verified physical building blocks, not an end-to-end AI model."""
+"""Independently verified physical building blocks, not an end-to-end machine learning model."""

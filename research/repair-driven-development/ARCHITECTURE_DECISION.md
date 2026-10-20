@@ -1,6 +1,6 @@
 # Architecture decision after the nature-dynamics research round
 
-**Date:** October 15, 2026. **Decision:** pursue a **typed reaction-and-repair substrate** as the next research architecture. This is the best justified direction from this round, not a validated best architecture or an established new category of AI. Its full structural-repair capability is not implemented.
+**Date:** October 15, 2026. **Decision:** pursue a **typed reaction-and-repair substrate** as the next research architecture. This is the best justified direction from this round, not a validated best architecture or an established new category of machine learning. Its full structural-repair capability is not implemented.
 
 **Later follow-up:** [RESEARCH_PROGRESS.md](RESEARCH_PROGRESS.md) reports the now-implemented limited coupled solver and nonlearned legal repair pilot. The constrained neural rate head wins the fixed-model comparison, and legal edit selection shows no broad advantage over budget-matched parameter adaptation. The [context/retention correction](CONTEXT_AND_RETENTION.md) supersedes the earlier build sequence before selector learning. The [specific closed-loop audit](CLOSED_LOOP_PRECEDENTS.md) also identifies closer predecessors for the overall vision. The proposal below records the earlier reasoning and is not a claim that the new studies succeeded.
 
@@ -78,6 +78,6 @@ The first new claim to seek is narrow: fewer new measurements or less total repa
 
 ## Independent review and ASI
 
-A [Claude Science critique prompt](CLAUDE_SCIENCE_REVIEW.md) is prepared. No review has been submitted and no agreement is claimed. Its role would be to challenge the biology, mathematical assumptions, and remaining novelty distinctions; another model's endorsement would not replace evidence.
+A [independent technical critique prompt](TECHNICAL_REVIEW.md) is prepared. No review has been submitted and no agreement is claimed. Its role would be to challenge the biology, mathematical assumptions, and remaining novelty distinctions; another model's endorsement would not replace evidence.
 
 An ASI system would require capabilities far beyond this experiment. We are building a falsifiable architecture research program, not a verified path to superintelligence. There is no need to fabricate randomness or abandon mathematical tools to respect biological complexity. Missing observations and uncertain mechanisms must be represented and tested, not explained away with a nature analogy.

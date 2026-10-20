@@ -25,7 +25,7 @@ Written before the prototype results were inspected. This is an exploratory prot
 
 ## What a result means
 
-A positive result demonstrates that one executable abstraction can help on the particular synthetic task. It does not establish a novel general AI architecture, biological causality, clinical utility, or ASI. An equally good simpler control is an important null result.
+A positive result demonstrates that one executable abstraction can help on the particular synthetic task. It does not establish a novel general machine learning architecture, biological causality, clinical utility, or ASI. An equally good simpler control is an important null result.
 
 ## Deferred work
 

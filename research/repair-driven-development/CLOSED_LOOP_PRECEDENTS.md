@@ -33,7 +33,7 @@ Specify before claiming a contribution:
 4. A common experimental-information budget, including initial conditions, measured pools, known interventions, validation labels, and any active queries.
 5. Tests on withheld mechanisms, retention, false structural changes, noise-only shifts, and real measurements.
 
-A nonlearned search over models would be a baseline implementation of known ideas. A transferred policy that improves the error/measurement/cost tradeoff could be a contribution if the novelty audit and direct comparisons survive further scrutiny. A combination of known ingredients is not automatically a new type of AI.
+A nonlearned search over models would be a baseline implementation of known ideas. A transferred policy that improves the error/measurement/cost tradeoff could be a contribution if the novelty audit and direct comparisons survive further scrutiny. A combination of known ingredients is not automatically a new type of machine learning.
 
 ## Immediate engineering step
 

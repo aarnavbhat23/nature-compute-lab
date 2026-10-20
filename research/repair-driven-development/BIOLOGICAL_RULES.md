@@ -112,4 +112,4 @@ The strongest architectural research direction is a typed dynamical substrate: r
 
 ## Independent review option
 
-No Claude Science tool or connector is exposed in this session's tool catalog, and no Claude review has occurred. The user offered it as an optional independent check. A review prompt can be prepared for the point where a formal or biological claim needs external scrutiny; no consensus should be claimed from an unperformed review. The present source studies and experiments can proceed without that dependency.
+No independent external review has occurred. An optional technical review prompt is available. A review prompt can be prepared for the point where a formal or biological claim needs external scrutiny; no consensus should be claimed from an unperformed review. The present source studies and experiments can proceed without that dependency.

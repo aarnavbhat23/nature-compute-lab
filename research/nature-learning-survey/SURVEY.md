@@ -7,7 +7,7 @@ This survey responds to the request for a successor-level learning idea: start w
 Three questions must remain separate:
 
 1. **Does the natural system store information or adapt?** A persistent physical state can satisfy this without learning a general predictor.
-2. **Has someone already turned the mechanism into computation or learning?** Using AI to analyze the natural system is a different direction of influence.
+2. **Has someone already turned the mechanism into computation or learning?** Using machine learning to analyze the natural system is a different direction of influence.
 3. **What additional algorithmic claim could we test?** A gap in application coverage is not automatically a new learning principle.
 
 The judgments below are our research inferences. The numbered references identify what the papers actually support; details and access levels are in [SOURCES.md](SOURCES.md). Candidate gaps are proposals, not statements that the entire field has neglected them.

@@ -4,7 +4,7 @@
 
 The [specific closed-loop audit](CLOSED_LOOP_PRECEDENTS.md) finds close precedents for the overall idea, including a demonstrated 2019 signaling/metabolic revision loop. The [coupled-model pilot](TYPED_RESOURCE_RESULTS.md) favors the conventional constrained neural head; the [legal-repair pilot](TYPED_REPAIR_RESULTS.md) finds no broad advantage over parameter adaptation. [Context and retention](CONTEXT_AND_RETENTION.md) now need a precise interface before the learned-selector stage.
 
-The earlier [architecture decision](ARCHITECTURE_DECISION.md) and [research results](RESEARCH_RESULTS.md) explain the **typed reaction-and-repair substrate** hypothesis. Read the [biological evidence](BIOLOGICAL_RULES.md), [focused novelty audit](NOVELTY_AUDIT.md), and optional [Claude Science critique prompt](CLAUDE_SCIENCE_REVIEW.md). No external review has been run. The original proposal below records the starting hypothesis; the latest progress and context correction supersede it where they differ.
+The earlier [architecture decision](ARCHITECTURE_DECISION.md) and [research results](RESEARCH_RESULTS.md) explain the **typed reaction-and-repair substrate** hypothesis. Read the [biological evidence](BIOLOGICAL_RULES.md), [focused novelty audit](NOVELTY_AUDIT.md), and optional [independent technical critique prompt](TECHNICAL_REVIEW.md). No external review has been run. The original proposal below records the starting hypothesis; the latest progress and context correction supersede it where they differ.
 
 Start with [the first-task implementation and pilot protocol](FIRST_TASK.md). Results are linked there after execution.
 
@@ -66,7 +66,7 @@ Trainable local interactions are the first representational hypothesis. A learne
 
 Version zero fits one substrate per system and transfers the repair selector across systems. It is not yet a single pretrained model spanning biological entities. This scope keeps the first transfer claim testable.
 
-The equations use familiar tools from dynamical systems, optimization, and model selection. Giving these tools biological names would not establish novelty. The candidate contribution is the precisely specified combination and the transferable repair behavior, if either survives comparison. The initial proposal omitted closest AI precedents at the user's request. During the subsequent research round, the user authorized both biology-led exploration and a focused comparison; [that audit](NOVELTY_AUDIT.md) finds substantial overlap and leaves the exact joint contribution unverified.
+The equations use familiar tools from dynamical systems, optimization, and model selection. Giving these tools biological names would not establish novelty. The candidate contribution is the precisely specified combination and the transferable repair behavior, if either survives comparison. The initial proposal omitted closest machine learning precedents at the user's request. During the subsequent research round, the user authorized both biology-led exploration and a focused comparison; [that audit](NOVELTY_AUDIT.md) finds substantial overlap and leaves the exact joint contribution unverified.
 
 ## What to build first
 

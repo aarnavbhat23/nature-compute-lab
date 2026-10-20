@@ -5,7 +5,7 @@ Research session: October 15, 2026, America/Los_Angeles. This is a targeted, ite
 ## Method
 
 1. Started from non-neural natural mechanisms: assembly, phase separation, mechanical adaptation, flow, dormancy, ecology, topology, compartmentalization, proofreading and ciliary coordination.
-2. Searched both **computation using the mechanism** and **learning intrinsic to the mechanism**. Excluded ordinary AI prediction of a material's properties when it was not a relevant algorithmic comparator.
+2. Searched both **computation using the mechanism** and **learning intrinsic to the mechanism**. Excluded ordinary machine learning prediction of a material's properties when it was not a relevant algorithmic comparator.
 3. Followed primary-paper titles to publishers, PubMed/PMC, arXiv, author institutions, and author software. Checked current publication status for the main recent computational papers.
 4. Examined methods for the strongest nearby computational work: self-assembly pattern recognition, surface-condensate classification, cytoskeletal learning, temporal contrastive learning, chemical associative agents, and chemical in-context learning.
 5. Followed the yeast-memory lead through 2013, 2022 and 2025 work, then checked broader sequestration, conformational-computing and memory models to avoid relying on a literal keyword novelty test. Identified an additional 2026 preprint for follow-up.
@@ -117,8 +117,8 @@ physarum adaptive network model Tero Kobayashi Nakagaki 2007
 
 ## Exclusions and uncertainties
 
-Review articles and author-group pages helped discover primary work. Reddit, Wikipedia, commercial AI summaries, and unrelated projects with matching names were not used to establish scientific conclusions. A similarly named LLM-memory product is not a Whi3 learning implementation. A neural network segmenting yeast images is not evidence that a Whi3-inspired learner has been built.
+Review articles and author-group pages helped discover primary work. Reddit, Wikipedia, commercial machine learning summaries, and unrelated projects with matching names were not used to establish scientific conclusions. A similarly named LLM-memory product is not a Whi3 learning implementation. A neural network segmenting yeast images is not evidence that a Whi3-inspired learner has been built.
 
 No patent clearance or exhaustive citation-network search was performed. No external model was reproduced. Direct access to several publisher/PMC pages failed; access levels are recorded in [SOURCES.md](SOURCES.md). Primary abstracts and indexed excerpts were sufficient to reject broad novelty claims, but not to prove a detailed absence or compare every implementation choice.
 
-Before a paper-level novelty claim, obtain and inspect the complete leading biological papers and the 2026 follow-up, audit current versions of the closest algorithms, inspect their code, and search citations around the final explicit update rule. Claude Science may provide an independent critique if available later, but no external Claude session was used or claimed in this audit.
+Before a paper-level novelty claim, obtain and inspect the complete leading biological papers and the 2026 follow-up, audit current versions of the closest algorithms, inspect their code, and search citations around the final explicit update rule. An independent reviewer may provide a critique later; no external review was performed for this audit.
