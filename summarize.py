@@ -79,8 +79,8 @@ def build(root, output, preview_clock=None):
     text = ['# Seven nature-inspired mechanism probes', '',
             f'Generated {datetime.now(timezone.utc).isoformat()}.', '',
             '**Status:** '+('Local preview; experiments 06 and 07 await scheduled repository checkpoints.' if preview_clock else 'Initial staged study complete.'), '',
-            'Developed with Codex assistance, including implementation, documentation, experiment execution and this comparison. Evaluate claims against the code and saved measurements.', '',
-            'These are seven small algorithmic abstractions, not seven finished general AI architectures. All data are synthetic. No novelty, biology, or ASI claim is validated by these results.', '',
+            'Evaluate claims against the code and saved measurements.', '',
+            'These are seven small algorithmic abstractions, not seven finished general machine learning architectures. All data are synthetic. No novelty, biology, or ASI claim is validated by these results.', '',
             'Each task has its own scale and controls. The table is descriptive, not a cross-task leaderboard. Repeated verification runs are not additional independent seeds.', '',
             '![Within-task results](comparison.png)', '',
             '| Probe | Prototype error, mean ± sample SD | Strong same-task comparison | Interpretation |',
@@ -105,7 +105,7 @@ def build(root, output, preview_clock=None):
              '- Real molecular data, learned primitives, and broader transfer remain untested.', '',
              '## Result provenance', '']
     for path, record in records:
-        text.append(f"- `{record['experiment']}`: `{path}`; source `{record.get('source_commit', record.get('source_sha256', 'unknown'))}`.")
+        text.append(f"- `{record['experiment']}`: `{path.relative_to(root).as_posix() if path.is_relative_to(root) else path.name}`; source `{record.get('source_commit', record.get('source_sha256', 'unknown'))}`.")
     (output/'comparison.md').write_text('\n'.join(text)+'\n')
     print(output/'comparison.md')
 

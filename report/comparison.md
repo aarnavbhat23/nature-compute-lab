@@ -4,9 +4,9 @@ Generated 2026-10-19T16:32:40.118914+00:00.
 
 **Status:** Initial staged study complete.
 
-Developed with Codex assistance, including implementation, documentation, experiment execution and this comparison. Evaluate claims against the code and saved measurements.
+Evaluate claims against the code and saved measurements.
 
-These are seven small algorithmic abstractions, not seven finished general AI architectures. All data are synthetic. No novelty, biology, or ASI claim is validated by these results.
+These are seven small algorithmic abstractions, not seven finished general machine learning architectures. All data are synthetic. No novelty, biology, or ASI claim is validated by these results.
 
 Each task has its own scale and controls. The table is descriptive, not a cross-task leaderboard. Repeated verification runs are not additional independent seeds.
 
@@ -40,10 +40,10 @@ For clocks, mean per-seed dense/asynchronous update ratio is 3.44. This is an ev
 
 ## Result provenance
 
-- `01_development`: `/Users/aarnav/Documents/Codex/2026-10-14/i-w/outputs/nature-compute-lab/results/01_development_20261019T163232557255Z/metrics.json`; source `61390eed7d13649520db37d796d8766cfe60fc91`.
-- `02_catalysts`: `/Users/aarnav/Documents/Codex/2026-10-14/i-w/outputs/nature-compute-lab/results/02_catalysts_20261019T163234450210Z/metrics.json`; source `61390eed7d13649520db37d796d8766cfe60fc91`.
-- `03_symbiosis`: `/Users/aarnav/Documents/Codex/2026-10-14/i-w/outputs/nature-compute-lab/results/03_symbiosis_20261019T163234599299Z/metrics.json`; source `61390eed7d13649520db37d796d8766cfe60fc91`.
-- `04_repair`: `/Users/aarnav/Documents/Codex/2026-10-14/i-w/outputs/nature-compute-lab/results/04_repair_20261019T163234772516Z/metrics.json`; source `61390eed7d13649520db37d796d8766cfe60fc91`.
-- `05_immune_memory`: `/Users/aarnav/Documents/Codex/2026-10-14/i-w/outputs/nature-compute-lab/results/05_immune_memory_20261019T163234909762Z/metrics.json`; source `61390eed7d13649520db37d796d8766cfe60fc91`.
-- `06_stable_regimes`: `/Users/aarnav/Documents/Codex/2026-10-14/i-w/outputs/nature-compute-lab/results/06_stable_regimes_20261019T163235870282Z/metrics.json`; source `61390eed7d13649520db37d796d8766cfe60fc91`.
-- `07_clocks`: `/Users/aarnav/Documents/Codex/2026-10-14/i-w/outputs/nature-compute-lab/results/07_clocks_20261019T163236191443Z/metrics.json`; source `61390eed7d13649520db37d796d8766cfe60fc91`.
+- `01_development`: `results/01_development_20261019T163232557255Z/metrics.json`; source `61390eed7d13649520db37d796d8766cfe60fc91`.
+- `02_catalysts`: `results/02_catalysts_20261019T163234450210Z/metrics.json`; source `61390eed7d13649520db37d796d8766cfe60fc91`.
+- `03_symbiosis`: `results/03_symbiosis_20261019T163234599299Z/metrics.json`; source `61390eed7d13649520db37d796d8766cfe60fc91`.
+- `04_repair`: `results/04_repair_20261019T163234772516Z/metrics.json`; source `61390eed7d13649520db37d796d8766cfe60fc91`.
+- `05_immune_memory`: `results/05_immune_memory_20261019T163234909762Z/metrics.json`; source `61390eed7d13649520db37d796d8766cfe60fc91`.
+- `06_stable_regimes`: `results/06_stable_regimes_20261019T163235870282Z/metrics.json`; source `61390eed7d13649520db37d796d8766cfe60fc91`.
+- `07_clocks`: `results/07_clocks_20261019T163236191443Z/metrics.json`; source `61390eed7d13649520db37d796d8766cfe60fc91`.
